@@ -306,7 +306,7 @@ const rentalItems = [
     { id: 16, title: 'Custom Graduation Setup', price: 'Varies', img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9906-1-scaled.jpg', desc: 'Personalized graduation decor setup tailored to your school colors and theme. Contact us for a quote.' },
     { id: 17, title: 'Premium GRAD Decor', price: 'Varies', img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg', desc: 'Exquisite graduation celebration setup with premium backdrops and floral arrangements. Price varies by request.' },
     { id: 18, title: 'Seemantham/Baby Shower Backdrop', price: 150, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/07/Seemantham-2.jpg', desc: 'Traditional Seemantham or Baby Shower backdrop for your special occasion.' },
-    { id: 19, title: 'VEVOR Metal Wedding Centerpiece (2PCS)', price: 25, img: 'https://m.media-amazon.com/images/I/71rYvWvJ0pL._AC_SL1500_.jpg', desc: 'Gold crystal metal centerpiece (55cm / 21.65\") - Set of 2 pieces.' },
+    { id: 19, title: 'VEVOR Metal Wedding Centerpiece (2PCS)', price: 25, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/04/image-19-908x1024.png', desc: 'Gold crystal metal centerpiece (55cm / 21.65\") - Set of 2 pieces.' },
     { id: 20, title: 'Happy Birthday Neon Sign', price: 10, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/05/HBD.jpg', desc: 'Bright and festive Happy Birthday neon sign to light up your party.' },
     { id: 21, title: 'Good Vibes Only Neon Sign', price: 10, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-5.png', desc: 'Trendy \"Good Vibes Only\" neon sign for a modern event feel.' },
     { id: 22, title: 'Congrats Grad Neon Sign', price: 10, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/07/81i8bvay0GL._AC_SX679_.jpg', desc: 'Celebratory Congrats Grad neon sign - perfect for Class of 2026 parties!' },
@@ -1277,7 +1277,41 @@ document.addEventListener('DOMContentLoaded', () => {
     router();
     window.addEventListener('hashchange', router);
     renderSMSWidget();
+    initImageModal();
 });
+
+function initImageModal() {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.querySelector('.modal-close');
+
+    if (!modal || !modalImg) return;
+
+    // Global listener for image clicks
+    document.addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG' && !e.target.classList.contains('no-zoom') && !e.target.closest('.sms-btn')) {
+            modal.classList.add('active');
+            modalImg.src = e.target.src;
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+    });
+
+    // Close modal
+    const closeModal = () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    // ESC key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+}
 
 function renderSMSWidget() {
     if (document.getElementById('sms-widget')) return;
