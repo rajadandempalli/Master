@@ -514,6 +514,7 @@ function renderCart() {
     return `
         <div class="container">
             <h2 class="section-title">Your Cart</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">Review your selected rental items below.</p>
             <div class="cart-layout">
                 <div>
                     ${cart.map(item => `
