@@ -34,11 +34,25 @@ window.refreshRentalsUI = () => {
     const grid = document.getElementById('rentals-grid');
     if (!grid) return;
     
-    const filtered = rentalItems.filter(item => 
-        item.title.toLowerCase().includes(searchQuery) || 
-        (item.category && item.category.toLowerCase().includes(searchQuery)) ||
-        (item.desc && item.desc.toLowerCase().includes(searchQuery))
-    );
+    const filtered = rentalItems.filter(item => {
+        const title = item.title.toLowerCase();
+        const desc = (item.desc || "").toLowerCase();
+        const category = (item.category || "").toLowerCase();
+        const q = searchQuery.toLowerCase().trim();
+
+        if (!q) return true;
+
+        // Direct match
+        if (title.includes(q) || desc.includes(q) || category.includes(q)) return true;
+
+        // Plural fallback: if search is "chairs", also check for "chair"
+        if (q.endsWith('s') && q.length > 3) {
+            const singular = q.slice(0, -1);
+            if (title.includes(singular) || desc.includes(singular) || category.includes(singular)) return true;
+        }
+
+        return false;
+    });
 
     if (filtered.length === 0) {
         grid.innerHTML = `
@@ -1296,17 +1310,59 @@ function router() {
     });
 
     let content = '';
+    let pageTitle = 'Petals Paradise Events | Event Decor & Party Rentals DMV';
+    let metaDesc = 'Transform your celebrations into unforgettable moments with Petals Paradise Events. Premium party rentals, elegant backdrops, and custom decor in the DMV area.';
+
     switch (hash) {
-        case '#': content = renderHome(); break;
-        case '#rentals': content = renderRentals(); break;
-        case '#graduation': content = renderGraduation(); break;
-        case '#services': content = renderServices(); break;
-        case '#gallery': content = renderGallery(); break;
-        case '#videos': content = renderVideos(); break;
-        case '#contact': content = renderContact(); break;
-        case '#cart': content = renderCart(); break;
-        case '#checkout': content = renderCheckout(); break;
-        default: content = renderHome();
+        case '#': 
+            content = renderHome(); 
+            break;
+        case '#rentals': 
+            content = renderRentals(); 
+            pageTitle = 'Party & Event Rentals | Petals Paradise Events';
+            metaDesc = 'Explore our wide range of event rentals including rectangular folding tables, gold chairs, tents, and traditional backdrops.';
+            break;
+        case '#graduation': 
+            content = renderGraduation(); 
+            pageTitle = 'Graduation Party Decor 2026 | Petals Paradise Events';
+            metaDesc = 'Make your 2026 graduation unforgettable with marquee letters, custom setups, and party essentials.';
+            break;
+        case '#services': 
+            content = renderServices(); 
+            pageTitle = 'Our Event Services | Petals Paradise Events';
+            metaDesc = 'From weddings to housewarmings, we offer comprehensive decor solutions tailored to your unique celebration.';
+            break;
+        case '#gallery': 
+            content = renderGallery(); 
+            pageTitle = 'Event Inspiration Gallery | Petals Paradise Events';
+            metaDesc = 'View our portfolio of beautiful event setups, traditional Seemantham backdrops, and graduation celebrations.';
+            break;
+        case '#videos': 
+            content = renderVideos(); 
+            pageTitle = 'Video Highlights | Petals Paradise Events';
+            metaDesc = 'Watch our event decor in action through cinematic video highlights of our latest setups.';
+            break;
+        case '#contact': 
+            content = renderContact(); 
+            pageTitle = 'Contact Us | Petals Paradise Events';
+            metaDesc = 'Get a custom quote for your next event. Contact Petals Paradise Events for premium decor and rentals in DMV.';
+            break;
+        case '#cart': 
+            content = renderCart(); 
+            pageTitle = 'Your Rental Cart | Petals Paradise Events';
+            break;
+        case '#checkout': 
+            content = renderCheckout(); 
+            pageTitle = 'Secure Checkout | Petals Paradise Events';
+            break;
+        default: 
+            content = renderHome();
+    }
+
+    document.title = pageTitle;
+    const metaDescriptionTag = document.querySelector('meta[name="description"]');
+    if (metaDescriptionTag) {
+        metaDescriptionTag.setAttribute('content', metaDesc);
     }
 
     main.innerHTML = content;
