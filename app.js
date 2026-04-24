@@ -466,7 +466,7 @@ function renderHome() {
                 <h1>Crafting Unforgettable Moments</h1>
                 <p>We specialize in transforming your celebrations into beautiful memories with elegant decor and personalized touches for every occasion.</p>
                 <div class="hero-btns">
-                    <a href="#rentals" class="btn btn-primary">Explore Rentals</a>
+                    <a href="#rentals" class="btn btn-primary">Explore Rentalssss</a>
                     <a href="#contact" class="btn btn-outline">Contact Us</a>
                 </div>
             </div>
