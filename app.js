@@ -98,7 +98,7 @@ function getDynamicRecommendations() {
         recommendations = [...recommendations, ...general];
     }
 
-    return recommendations.slice(0, 4);
+    return recommendations.slice(0, 5);
 }
 
 function getDiscount() {
