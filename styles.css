@@ -72,6 +72,11 @@ a {
   white-space: nowrap;
 }
 
+.ticker-wrap:hover .ticker {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
 .ticker {
   display: flex;
   width: fit-content;
