@@ -520,28 +520,50 @@ function renderServices() {
 }
 
 function renderGallery() {
-    const images = [
-        'https://images.unsplash.com/photo-1519225421980-715cb0215aed',
-        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc',
-        'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3',
-        'https://images.unsplash.com/photo-1519167758481-83f550bb49b3',
-        'https://images.unsplash.com/photo-1478146896981-b80fe463b330',
-        'https://images.unsplash.com/photo-1530103862676-de3c9de59a9e'
-    ].map(url => url + '?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');
+    const gallery = {
+        "Graduation 2026": [
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9906-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9925-1-scaled.jpg"
+        ],
+        "Traditional & Seemantham": [
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Seemantham-4.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/Haldi-backdrop-3-2-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/Baby-backdrop-1-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/backdrop-2-1-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/31782321-EE45-4F6A-9482-25F39324F8B7-scaled.jpg"
+        ],
+        "Event Highlights": [
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0012-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/12/IMG_0670-2-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0048-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0079-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/12/IMG_0755-2-scaled.jpg",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-1.png",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-2-scaled.png",
+            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-scaled.png"
+        ]
+    };
 
     return `
         <div class="container">
             <div class="text-center">
-                <h2 class="section-title">Gallery</h2>
-                <p class="section-subtitle">A glimpse into the magical moments we've created.</p>
+                <h2 class="section-title">Our Gallery</h2>
+                <p class="section-subtitle">A glimpse into the stunning events we've brought to life.</p>
             </div>
-            <div class="grid">
-                ${images.map(img => `
-                    <div class="card-img-wrapper" style="border-radius: 12px;">
-                        <img src="${img}" alt="Gallery Image" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            
+            ${Object.entries(gallery).map(([category, images]) => `
+                <div class="mt-2">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 1rem;">${category}</h3>
+                    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                        ${images.map(img => `
+                            <div class="card" style="padding: 0; overflow: hidden; border-radius: 12px; height: 350px;">
+                                <img src="${img}" alt="${category}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                            </div>
+                        `).join('')}
                     </div>
-                `).join('')}
-            </div>
+                </div>
+            `).join('')}
         </div>
     `;
 }
