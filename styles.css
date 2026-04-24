@@ -662,12 +662,17 @@ footer {
 
 @media (max-width: 768px) {
   :root {
-    --banner-height: 50px; /* Taller on mobile for text wrapping if needed */
+    --banner-height: 65px; /* Increased height for stacking */
   }
   
   .promo-banner {
     font-size: 0.8rem;
-    padding: 0 1rem;
+    padding: 0.5rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    gap: 0.3rem;
   }
 
   .banner-extra-text {
@@ -680,18 +685,18 @@ footer {
 
   .banner-cta {
     display: flex;
-    margin-left: 0.5rem;
-    font-size: 0.7rem;
-    padding: 2px 8px;
+    margin-left: 0;
+    font-size: 0.75rem;
+    padding: 2px 12px;
   }
 
   .banner-cta span {
-    display: none; /* Hide 'EXPLORE GRAD COLLECTION' text */
+    display: inline; /* Show 'EXPLORE GRAD COLLECTION' text on mobile now */
   }
 
-  /* Add 'Explore' text for mobile specifically */
+  /* Remove 'Explore' text for mobile specifically */
   .banner-cta::after {
-    content: 'Explore';
+    content: none;
   }
 
 .sticky-checkout-container.hidden {
