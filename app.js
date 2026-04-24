@@ -760,10 +760,12 @@ function renderCart() {
         const text = method === 'Delivery' ? `$${finalTotal} + Delivery (TBD)` : `$${finalTotal}`;
         
         totalDisplays.forEach(el => {
-            el.innerHTML = `<span>Total Estimate:</span> <span>${text}</span>`;
+            el.innerHTML = `<span style="font-size: 1rem; color: var(--text-secondary);">Total Estimate:</span> <span style="font-size: 1.25rem; font-weight: 700; color: var(--primary-color); text-align: right;">${text}</span>`;
             el.style.display = 'flex';
             el.style.justifyContent = 'space-between';
             el.style.alignItems = 'center';
+            el.style.flexWrap = 'wrap';
+            el.style.gap = '0.5rem';
             el.style.width = '100%';
         });
         
@@ -896,9 +898,9 @@ function renderCart() {
                         </div>
                     </form>
 
-                    <div id="summary-total-val" class="summary-total" style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-                        <span>Total Estimate:</span>
-                        <span style="font-weight: 700; color: var(--primary-color);">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
+                    <div id="summary-total-val" class="summary-total" style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                        <span style="font-size: 1rem; color: var(--text-secondary);">Total Estimate:</span>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: var(--primary-color); text-align: right;">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
                     </div>
                     <a href="#checkout" id="cart-checkout-btn" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem; display: block; padding: 1.2rem;">
                         Proceed to Checkout
@@ -1216,9 +1218,9 @@ function renderCheckout() {
                         </div>
                     </form>
 
-                    <div id="summary-total-val" class="summary-total" style="display: flex; justify-content: space-between; align-items: center;">
-                        <span>Total Estimate:</span>
-                        <span style="font-weight: 700; color: var(--primary-color);">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
+                    <div id="summary-total-val" class="summary-total" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                        <span style="font-size: 1rem; color: var(--text-secondary);">Total Estimate:</span>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: var(--primary-color); text-align: right;">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
                     </div>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
                         <i data-feather="info" style="width:16px; margin-right:4px; vertical-align:middle;"></i>
