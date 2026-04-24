@@ -738,8 +738,20 @@ function renderCart() {
     };
     window.setFulfillment = (method) => {
         fulfillmentMethod = method;
-        saveCart();
-        router(); // Refresh to update totals
+        saveCart(true); // Save without full re-render
+        
+        // Update Total Display manually to avoid flicker/scroll
+        const totalDisplays = document.querySelectorAll('#summary-total-val');
+        const finalTotal = getCartTotal() - getDiscount();
+        const text = method === 'Delivery' ? `$${finalTotal} + Delivery (TBD)` : `$${finalTotal}`;
+        
+        totalDisplays.forEach(el => el.textContent = text);
+        
+        // Also toggle any delivery-specific summary rows
+        const deliveryRows = document.querySelectorAll('#delivery-summary-row');
+        deliveryRows.forEach(el => {
+            el.style.display = method === 'Delivery' ? 'flex' : 'none';
+        });
     };
 
     // Intersection Observer for sticky checkout button
@@ -869,7 +881,7 @@ function renderCart() {
 
                     <div class="summary-total" style="margin-top: 1.5rem;">
                         <span>Total Estimate:</span>
-                        <span style="float:right;">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
+                        <span id="summary-total-val" style="float:right;">$${subtotal - discount}${fulfillmentMethod === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
                     </div>
                     <a href="#checkout" class="btn btn-primary" style="width: 100%; text-align:center; margin-top:1.5rem;">Proceed to Checkout</a>
                     <a href="#rentals" class="btn btn-outline" style="width: 100%; text-align:center; margin-top:1rem;">Continue Shopping</a>
