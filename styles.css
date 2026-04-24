@@ -213,6 +213,7 @@ main {
   margin-bottom: 1rem;
   background: linear-gradient(90deg, var(--text-primary), var(--primary-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .section-subtitle {
@@ -699,6 +700,7 @@ footer {
   .banner-cta::after {
     content: none;
   }
+}
 
 .sticky-checkout-container.hidden {
   transform: translateY(100%);
