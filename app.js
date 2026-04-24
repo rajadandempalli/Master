@@ -288,7 +288,7 @@ function setQuantity(id, newQty) {
 const rentalItems = [
     { id: 1, title: 'Round Fold-In-Half Table', price: 12, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/05/Screen-Shot-2025-05-12-at-5.19.35-PM.png', desc: 'Perfect Table to match any occasion and theme (60" x 29.8").' },
     { id: 2, title: 'Cocktail Table (With Cloths)', price: 11, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/12/image.png', desc: 'Elegant cocktail tables with black/white cloths.' },
-    { id: 3, title: 'Adult Folding Table Rental', price: 8, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/04/Tables.webp', desc: 'Perfect seating to match any occasion and theme.' },
+    { id: 3, title: 'Adult Rectangular Folding Table Rental', price: 8, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/04/Tables.webp', desc: 'Perfect seating to match any occasion and theme.' },
     { id: 4, title: 'Adult Folding Chair', price: 2, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/04/Chairs.webp', desc: 'Perfect seating for any occasion. Note: Bulk discount! $1.50 each when renting 30 or more.' },
     { id: 5, title: 'Wedding Tent (16x26)', price: 150, img: 'https://petalsparadiseevents.com/wp-content/uploads/2026/04/image.png', desc: 'Light weight yet sturdy, high quality yet affordable tent.' },
     { id: 6, title: 'Round Cylinder Pedestal Display', price: 30, img: 'https://petalsparadiseevents.com/wp-content/uploads/2025/05/Screen-Shot-2025-05-11-at-9.53.07-PM.png', desc: 'Set of 5 pedestals with gold/white covers for grand displays.' },
@@ -384,26 +384,20 @@ function renderNavbar() {
     feather.replace();
     updateCartBadge();
 
-    // Mobile menu logic
+    // Toggle Mobile Menu
     const menuBtn = document.getElementById('mobile-menu-btn');
     const closeBtn = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
 
-    const toggleMenu = () => {
-        mobileMenu.classList.toggle('active');
-        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    };
-
-    menuBtn.addEventListener('click', toggleMenu);
-    closeBtn.addEventListener('click', toggleMenu);
-    
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            document.body.style.overflow = '';
+    if (menuBtn && closeBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => mobileMenu.classList.add('active'));
+        closeBtn.addEventListener('click', () => mobileMenu.classList.remove('active'));
+        
+        // Close menu on link click
+        mobileMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.remove('active'));
         });
-    });
+    }
 }
 
 function renderFooter() {
