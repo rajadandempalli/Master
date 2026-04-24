@@ -927,35 +927,50 @@ function renderCheckout() {
         const formData = new FormData(e.target);
         const details = Object.fromEntries(formData);
 
-        let body = `New Rental Request:\n\n`;
+        let body = `Hi Petals Paradise Events team,\n\nI would like to request the following rentals for my upcoming event. Below are the details:\n\n`;
+        
+        body += `CUSTOMER INFORMATION\n`;
+        body += `--------------------\n`;
         body += `Name: ${details.name}\n`;
         body += `Email: ${details.email}\n`;
-        body += `Phone: ${details.phone}\n`;
+        body += `Phone: ${details.phone}\n\n`;
+        
+        body += `EVENT LOGISTICS\n`;
+        body += `---------------\n`;
         body += `Fulfillment: ${details.fulfillment}\n`;
         if (details.fulfillment === 'Delivery') {
             body += `Delivery Address: ${details.delivery_address}\n`;
+            body += `Delivery Date: ${details.dropoff_date} at ${details.dropoff_time}\n`;
+            body += `Collection Date: ${details.pickup_date} at ${details.pickup_time}\n`;
+        } else {
+            body += `Pick Up Date: ${details.pickup_date} at ${details.pickup_time}\n`;
+            body += `Return Date: ${details.dropoff_date} at ${details.dropoff_time}\n`;
         }
         body += `Event Date: ${details.date}\n`;
-        body += `Venue Location: ${details.location}\n`;
-        body += `Pick Up: ${details.pickup_date} at ${details.pickup_time}\n`;
-        body += `Drop Off: ${details.dropoff_date} at ${details.dropoff_time}\n\n`;
+        body += `Venue Location: ${details.location}\n\n`;
         
-        if (appliedPromo) {
-            body += `Promo Code Applied: ${appliedPromo} (-$${getDiscount()})\n`;
-        }
-        body += `Items Requested:\n`;
-
+        body += `ORDER SUMMARY\n`;
+        body += `-------------\n`;
         let total = 0;
         cart.forEach(item => {
             body += `- ${item.quantity}x ${item.title} ($${getItemTotal(item)})\n`;
             total += getItemTotal(item);
         });
+        
+        if (appliedPromo) {
+            body += `\nPromo Code Applied: ${appliedPromo} (-$${getDiscount()})\n`;
+        }
+        
         const finalTotal = total - getDiscount();
         body += `\nEstimated Total: $${finalTotal}${details.fulfillment === 'Delivery' ? ' + Delivery Fee (TBD)' : ''}\n\n`;
 
         if (details.special_requests) {
-            body += `Special Requests / Missing Items:\n${details.special_requests}\n`;
+            body += `SPECIAL REQUESTS / MISSING ITEMS\n`;
+            body += `--------------------------------\n`;
+            body += `${details.special_requests}\n\n`;
         }
+        
+        body += `Thank you!`;
 
         const subject = encodeURIComponent(`Rental Request: ${details.name} - ${details.date}`);
         window.location.href = `mailto:contact@petalsparadiseevents.com?subject=${subject}&body=${encodeURIComponent(body)}`;
