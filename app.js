@@ -1276,4 +1276,25 @@ document.addEventListener('DOMContentLoaded', () => {
     renderFooter();
     router();
     window.addEventListener('hashchange', router);
+    renderSMSWidget();
 });
+
+function renderSMSWidget() {
+    if (document.getElementById('sms-widget')) return;
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const bodySeparator = isIOS ? '&' : '?';
+    const bodyText = encodeURIComponent("Hi Petals Paradise Events! I'm interested in your event decor rentals for an upcoming event. Could you please help me?");
+    const smsHref = `sms:+18484486993${bodySeparator}body=${bodyText}`;
+
+    const widget = document.createElement('div');
+    widget.id = 'sms-widget';
+    widget.innerHTML = `
+        <a href="${smsHref}" class="sms-btn" title="Text us">
+            <div class="sms-pulsate"></div>
+            <i data-feather="message-square" style="width: 28px; height: 28px;"></i>
+            <span class="sms-text">Text Petals Paradise Events</span>
+        </a>
+    `;
+    document.body.appendChild(widget);
+    if (window.feather) feather.replace();
+}
