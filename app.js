@@ -1,8 +1,10 @@
 // State Management
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let appliedPromo = JSON.parse(localStorage.getItem('appliedPromo')) || null;
 
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('appliedPromo', JSON.stringify(appliedPromo));
     updateCartBadge();
     if (window.location.hash === '#cart' || window.location.hash === '#checkout') {
         if (typeof router === 'function') router();
@@ -59,6 +61,40 @@ function getItemTotal(item) {
 
 function getCartTotal() {
     return cart.reduce((sum, item) => sum + getItemTotal(item), 0);
+}
+
+function getDiscount() {
+    if (!appliedPromo) return 0;
+    const subtotal = getCartTotal();
+    const promo = PROMOS[appliedPromo];
+    if (promo && subtotal >= promo.min) {
+        return promo.discount;
+    }
+    return 0;
+}
+
+const PROMOS = {
+    'PETALS5': { min: 100, discount: 5 },
+    'PETALS10': { min: 150, discount: 10 },
+    'PETALS15': { min: 200, discount: 15 },
+    'PETALS20': { min: 300, discount: 20 }
+};
+
+function applyPromoCode(code) {
+    const subtotal = getCartTotal();
+    const promo = PROMOS[code.toUpperCase()];
+    if (promo) {
+        if (subtotal >= promo.min) {
+            appliedPromo = code.toUpperCase();
+            saveCart();
+            showToast(`Promo ${appliedPromo} applied! $${promo.discount} off.`);
+            if (typeof router === 'function') router();
+        } else {
+            showToast(`Min. order for ${code} is $${promo.min}. (Excl. delivery)`);
+        }
+    } else {
+        showToast('Invalid promo code.');
+    }
 }
 
 function removeFromCart(id) {
@@ -540,6 +576,11 @@ function renderCart() {
     window.removeItem = removeFromCart;
     window.setQty = setQuantity;
     window.handleClearCart = clearCart;
+    window.handlePromo = (e) => {
+        e.preventDefault();
+        const input = e.target.querySelector('input');
+        applyPromoCode(input.value);
+    };
 
     // Intersection Observer for sticky checkout button
     setTimeout(() => {
@@ -570,26 +611,12 @@ function renderCart() {
                     <p style="color: var(--text-secondary); margin-top:1rem;">Browse our rentals to add items.</p>
                     <a href="#rentals" class="btn btn-primary mt-2">View Rentals</a>
                 </div>
-                
-                <div class="mt-2">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Recommended for Your Event</h3>
-                    <div class="recommendations-carousel">
-                        ${recommendations.map(item => `
-                            <div class="card recommendation-card" onclick="window.location.hash='#rentals'">
-                                <img src="${item.img}" alt="${item.title}">
-                                <div class="card-body" style="padding: 1rem;">
-                                    <h4 style="font-size: 1rem;">${item.title}</h4>
-                                    <p class="price" style="font-size: 1rem;">$${item.price}</p>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
             </div>
         `;
     }
 
-    const total = getCartTotal();
+    const subtotal = getCartTotal();
+    const discount = getDiscount();
 
     return `
         <div class="container">
@@ -607,7 +634,7 @@ function renderCart() {
                             <img src="${item.img}" alt="${item.title}">
                             <div class="cart-item-info">
                                 <h4 class="cart-item-title">${item.title}</h4>
-                                <p style="color: var(--primary-color); font-weight:600;">$${getItemPrice(item)}${item.id === 4 && item.quantity >= 30 ? " <small style='font-size: 0.8em; color: var(--text-secondary);'>(Bulk Rate)</small>" : ""}</p>
+                                <p style="color: var(--primary-color); font-weight:600;">$${getItemPrice(item)}</p>
                             </div>
                             <div class="cart-item-actions">
                                 <div class="quantity-controls">
@@ -626,21 +653,39 @@ function renderCart() {
                     <h3 style="margin-bottom: 1.5rem;">Order Summary</h3>
                     <div class="summary-row">
                         <span>Items (${cart.reduce((s, i) => s + i.quantity, 0)})</span>
-                        <span>$${total}</span>
+                        <span>$${subtotal}</span>
                     </div>
-                    <p style="color: var(--text-secondary); font-size:0.9rem; margin-bottom:1rem;">* Payment will be collected in person.</p>
-                    <div class="summary-total">
+                    ${discount > 0 ? `
+                        <div class="summary-row" style="color: #10b981;">
+                            <span>Discount (${appliedPromo})</span>
+                            <span>-$${discount}</span>
+                        </div>
+                    ` : ''}
+                    
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(212, 175, 55, 0.1); border-radius: 8px; border: 1px dashed var(--primary-color);">
+                        <p style="font-weight: 700; color: var(--primary-color); font-size: 0.85rem; margin-bottom: 0.5rem;">🎓 GRAD SEASON PROMOTION</p>
+                        <ul style="font-size: 0.75rem; color: var(--text-secondary); list-style: none;">
+                            <li>• PETALS5: $5 off $100+</li>
+                            <li>• PETALS10: $10 off $150+</li>
+                            <li>• PETALS15: $15 off $200+</li>
+                            <li>• PETALS20: $20 off $300+</li>
+                        </ul>
+                    </div>
+
+                    <form onsubmit="handlePromo(event)" style="margin-top: 1.5rem;">
+                        <div class="form-group" style="display: flex; gap: 0.5rem; margin-bottom: 0;">
+                            <input type="text" class="form-control" placeholder="Promo Code" value="${appliedPromo || ''}" style="margin-bottom: 0;">
+                            <button type="submit" class="btn btn-primary">Apply</button>
+                        </div>
+                    </form>
+
+                    <div class="summary-total" style="margin-top: 1.5rem;">
                         <span>Total Estimate:</span>
-                        <span id="summary-total-val" style="float:right;">$${total}${document.querySelector('input[name="fulfillment"]:checked')?.value === 'Delivery' ? ' + Delivery (TBD)' : ''}</span>
+                        <span style="float:right;">$${subtotal - discount}</span>
                     </div>
                     <a href="#checkout" class="btn btn-primary" style="width: 100%; text-align:center; margin-top:1.5rem;">Proceed to Checkout</a>
                     <a href="#rentals" class="btn btn-outline" style="width: 100%; text-align:center; margin-top:1rem;">Continue Shopping</a>
                 </div>
-            </div>
-            
-            <!-- Sticky Checkout Button for Mobile -->
-            <div id="sticky-checkout" class="sticky-checkout-container">
-                <a href="#checkout" class="btn btn-primary" style="width: 100%; text-align:center;">Proceed to Checkout</a>
             </div>
         </div>
     `;
@@ -669,6 +714,10 @@ function renderCheckout() {
         body += `Venue Location: ${details.location}\n`;
         body += `Pick Up: ${details.pickup_date} at ${details.pickup_time}\n`;
         body += `Drop Off: ${details.dropoff_date} at ${details.dropoff_time}\n\n`;
+        
+        if (appliedPromo) {
+            body += `Promo Code Applied: ${appliedPromo} (-$${getDiscount()})\n`;
+        }
         body += `Items Requested:\n`;
 
         let total = 0;
@@ -676,7 +725,8 @@ function renderCheckout() {
             body += `- ${item.quantity}x ${item.title} ($${getItemTotal(item)})\n`;
             total += getItemTotal(item);
         });
-        body += `\nEstimated Total: $${total}${details.fulfillment === 'Delivery' ? ' + Delivery Fee (TBD)' : ''}\n\n`;
+        const finalTotal = total - getDiscount();
+        body += `\nEstimated Total: $${finalTotal}${details.fulfillment === 'Delivery' ? ' + Delivery Fee (TBD)' : ''}\n\n`;
 
         if (details.special_requests) {
             body += `Special Requests / Missing Items:\n${details.special_requests}\n`;
@@ -686,6 +736,7 @@ function renderCheckout() {
         window.location.href = `mailto:contact@petalsparadiseevents.com?subject=${subject}&body=${encodeURIComponent(body)}`;
 
         cart = [];
+        appliedPromo = null;
         saveCart();
 
         const main = document.getElementById('main-content');
@@ -702,20 +753,40 @@ function renderCheckout() {
         feather.replace();
     };
 
+    window.initAutocomplete = () => {
+        const input = document.querySelector('input[name="delivery_address"]');
+        if (input && window.google) {
+            const autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.setComponentRestrictions({ country: ['us'] });
+        }
+    };
+
     window.toggleDelivery = (type) => {
         const deliverySection = document.getElementById('delivery-section');
         const summaryTotal = document.getElementById('summary-total-val');
+        const deliverySummary = document.getElementById('delivery-summary-row');
         
         if (deliverySection) {
             deliverySection.style.display = type === 'Delivery' ? 'block' : 'none';
             const addressInput = deliverySection.querySelector('input');
-            if (addressInput) addressInput.required = type === 'Delivery';
+            if (addressInput) {
+                addressInput.required = type === 'Delivery';
+                if (type === 'Delivery') setTimeout(window.initAutocomplete, 100);
+            }
+        }
+        
+        if (deliverySummary) {
+            deliverySummary.style.display = type === 'Delivery' ? 'flex' : 'none';
         }
         
         if (summaryTotal) {
-            summaryTotal.textContent = type === 'Delivery' ? `$${total} + Delivery (TBD)` : `$${total}`;
+            const finalTotal = getCartTotal() - getDiscount();
+            summaryTotal.textContent = type === 'Delivery' ? `$${finalTotal} + Delivery (TBD)` : `$${finalTotal}`;
         }
     };
+
+    const subtotal = getCartTotal();
+    const discount = getDiscount();
 
     return `
         <div class="container">
@@ -791,25 +862,41 @@ function renderCheckout() {
                             <label class="form-label">Special Requests / Missing Items</label>
                             <textarea name="special_requests" class="form-control" placeholder="Is there something specific you're looking for that's missing from our catalog? Or any other special instructions?"></textarea>
                         </div>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
-                            <i data-feather="info" style="width:16px; margin-right:4px; vertical-align:middle;"></i>
-                            Please call us at +1 848-448-6993 if you have any questions!
-                        </p>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Rental Request</button>
                     </form>
                 </div>
                 <div class="cart-summary">
-                    <h3 style="margin-bottom: 1.5rem;">Your Items</h3>
-                    ${cart.map(item => `
-                        <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; color:var(--text-secondary);">
-                            <span>${item.quantity}x ${item.title}</span>
-                            <span>$${getItemTotal(item)}</span>
-                        </div>
-                    `).join('')}
-                    <div class="summary-total" style="margin-top: 1rem; padding-top: 1rem;">
-                        <span>Total:</span>
-                        <span style="float:right;">$${getCartTotal()}</span>
+                    <h3 style="margin-bottom: 1.5rem;">Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Items (${cart.reduce((s, i) => s + i.quantity, 0)})</span>
+                        <span>$${subtotal}</span>
                     </div>
+                    ${discount > 0 ? `
+                        <div class="summary-row" style="color: #10b981;">
+                            <span>Discount (${appliedPromo})</span>
+                            <span>-$${discount}</span>
+                        </div>
+                    ` : ''}
+                    <div id="delivery-summary-row" class="summary-row" style="display: none;">
+                        <span>Delivery</span>
+                        <span style="color: var(--primary-color);">TBD</span>
+                    </div>
+                    
+                    <form onsubmit="handlePromo(event)" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group" style="display: flex; gap: 0.5rem; margin-bottom: 0;">
+                            <input type="text" class="form-control" placeholder="Promo Code" value="${appliedPromo || ''}" style="margin-bottom: 0;">
+                            <button type="submit" class="btn btn-primary">Apply</button>
+                        </div>
+                    </form>
+
+                    <div class="summary-total">
+                        <span>Total Estimate:</span>
+                        <span id="summary-total-val" style="float:right;">$${subtotal - discount}</span>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
+                        <i data-feather="info" style="width:16px; margin-right:4px; vertical-align:middle;"></i>
+                        Call us: +1 848-448-6993
+                    </p>
                 </div>
             </div>
         </div>
