@@ -344,6 +344,12 @@ main {
   font-weight: 600;
 }
 
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .quantity-controls {
   display: flex;
   align-items: center;
@@ -659,16 +665,23 @@ footer {
   
   .cart-item img {
     width: 100%;
-    height: 200px;
+    height: 140px; /* Reduced height */
   }
   
   .cart-item-info {
     text-align: center;
   }
+
+  .cart-item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
   
   .quantity-controls {
-    justify-content: center;
-    margin: 10px 0;
+    margin: 0;
   }
   
   .remove-btn {

@@ -523,14 +523,16 @@ function renderCart() {
                                 <h4 class="cart-item-title">${item.title}</h4>
                                 <p style="color: var(--primary-color); font-weight:600;">$${getItemPrice(item)}${item.id === 4 && item.quantity >= 30 ? " <small style='font-size: 0.8em; color: var(--text-secondary);'>(Bulk Rate)</small>" : ""}</p>
                             </div>
-                            <div class="quantity-controls">
-                                <button class="quantity-btn" onclick="changeQty(${item.id}, -1)">-</button>
-                                <input type="number" min="0" value="${item.quantity}" style="width: 40px; text-align: center; background: transparent; border: none; color: var(--text-primary); font-family: var(--font-family); font-size: 1rem; -moz-appearance: textfield;" onchange="setQty(${item.id}, this.value)">
-                                <button class="quantity-btn" onclick="changeQty(${item.id}, 1)">+</button>
+                            <div class="cart-item-actions">
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn" onclick="changeQty(${item.id}, -1)">-</button>
+                                    <input type="number" min="0" value="${item.quantity}" style="width: 40px; text-align: center; background: transparent; border: none; color: var(--text-primary); font-family: var(--font-family); font-size: 1rem; -moz-appearance: textfield;" onchange="setQty(${item.id}, this.value)">
+                                    <button class="quantity-btn" onclick="changeQty(${item.id}, 1)">+</button>
+                                </div>
+                                <button class="remove-btn" onclick="removeItem(${item.id})">
+                                    <i data-feather="trash-2"></i>
+                                </button>
                             </div>
-                            <button class="remove-btn" onclick="removeItem(${item.id})">
-                                <i data-feather="trash-2"></i>
-                            </button>
                         </div>
                     `).join('')}
                 </div>
