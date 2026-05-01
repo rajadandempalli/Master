@@ -62,7 +62,6 @@ This website is built with a focus on performance, user experience, and visual e
 ## 📞 Contact Us
 Ready to plan your next event? 
 - **Location:** Aldie, VA (Serving the entire DMV)
-- **Phone:** +1-848-448-6993
 - **Website:** [petalsparadiseevents.com](https://petalsparadiseevents.com/)
 
 ---
