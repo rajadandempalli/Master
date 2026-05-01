@@ -100,7 +100,7 @@ window.refreshRentalsUI = () => {
         return `
             <div class="card product-card">
                 <div class="card-img-wrapper">
-                    <img src="${item.img}" alt="${item.title}">
+                    <img loading="lazy" src="${item.img}" alt="${item.title}">
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">${item.title}</h3>
@@ -502,7 +502,7 @@ function renderHome() {
                 ${services.map(s => `
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="${s.img}" alt="${s.title}">
+                            <img loading="lazy" src="${s.img}" alt="${s.title}">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">${s.title}</h3>
@@ -611,7 +611,7 @@ function renderServices() {
                 ${services.map(s => `
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="${s.img}" alt="${s.title}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'"/>
+                            <img loading="lazy" src="${s.img}" alt="${s.title}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'"/>
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">${s.title}</h3>
@@ -663,7 +663,7 @@ function renderGallery() {
                     <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
                         ${images.map(img => `
                             <div class="card" style="padding: 0; overflow: hidden; border-radius: 12px; height: 350px;">
-                                <img src="${img}" alt="${category}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)">
+                                <img loading="lazy" src="${img}" alt="${category}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)">
                             </div>
                         `).join('')}
                     </div>
@@ -846,7 +846,7 @@ function renderCart() {
                         ${getDynamicRecommendations().map(item => `
                             <div class="card recommendation-card">
                                 <div class="card-img-wrapper" style="height: 150px;">
-                                    <img src="${item.img}" alt="${item.title}">
+                                    <img loading="lazy" src="${item.img}" alt="${item.title}">
                                 </div>
                                 <div class="card-body" style="padding: 1rem;">
                                     <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2;">${item.title}</h4>
@@ -879,7 +879,7 @@ function renderCart() {
                 <div>
                     ${cart.map(item => `
                         <div class="cart-item">
-                            <img src="${item.img}" alt="${item.title}">
+                            <img loading="lazy" src="${item.img}" alt="${item.title}">
                             <div class="cart-item-info">
                                 <h4 class="cart-item-title">${item.title}</h4>
                                 <p style="color: var(--primary-color); font-weight:600;">$${getItemPrice(item)}</p>
@@ -958,7 +958,7 @@ function renderCart() {
                     ${getDynamicRecommendations().map(item => `
                         <div class="card recommendation-card">
                             <div class="card-img-wrapper" style="height: 150px;">
-                                <img src="${item.img}" alt="${item.title}">
+                                <img loading="lazy" src="${item.img}" alt="${item.title}">
                             </div>
                             <div class="card-body" style="padding: 1rem;">
                                 <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; line-height: 1.2;">${item.title}</h4>
@@ -1335,7 +1335,7 @@ function renderItemCard(item) {
     return `
         <div class="card">
             <div class="card-img-wrapper">
-                <img src="${item.img}" alt="${item.title}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'"/>
+                <img loading="lazy" src="${item.img}" alt="${item.title}" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'"/>
             </div>
             <div class="card-body">
                 <h3 class="card-title">${item.title}</h3>

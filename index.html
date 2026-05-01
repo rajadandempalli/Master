@@ -102,9 +102,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="styles.css?v=1.0.6" as="style">
     <link rel="stylesheet" href="styles.css?v=1.0.6">
+    <link rel="preload" href="app.js?v=1.0.6" as="script" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
@@ -115,7 +118,16 @@
         <nav id="navbar" class="glass-nav"></nav>
         
         <!-- Main Content (Dynamic) -->
-        <main id="main-content"></main>
+        <main id="main-content">
+            <!-- Initial Hero Skeleton for FCP/LCP -->
+            <section class="hero-skeleton">
+                <div class="hero-content">
+                    <h1>Petals Paradise Events</h1>
+                    <p>Premium Party Rentals & Exquisite Event Decor in DMV</p>
+                    <div class="skeleton-btn"></div>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer id="footer"></footer>
@@ -134,11 +146,11 @@
     <div id="sticky-action-container" class="sticky-mobile-action"></div>
 
     <!-- Feather Icons for lightweight SVGs -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
     <!-- Google Maps for Autocomplete -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMRF6oAHu-iA_50hpuFXPwLKaPRIcos3A&libraries=places"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMRF6oAHu-iA_50hpuFXPwLKaPRIcos3A&libraries=places" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
     <script src="app.js?v=1.0.6" type="module"></script>
 </body>
 </html>

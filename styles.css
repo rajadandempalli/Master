@@ -1037,3 +1037,47 @@ img {
   background: rgba(18, 18, 18, 0.9);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* Performance: Hero Skeleton for FCP/LCP */
+.hero-skeleton {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bg-color);
+    padding: 2rem;
+}
+
+.hero-skeleton .hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.hero-skeleton .hero-content p {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.skeleton-btn {
+    width: 200px;
+    height: 50px;
+    background: var(--surface-color);
+    margin: 0 auto;
+    border-radius: 30px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.6; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
