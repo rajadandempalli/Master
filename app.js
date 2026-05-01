@@ -628,26 +628,26 @@ function renderServices() {
 function renderGallery() {
     const gallery = {
         "Graduation 2026": [
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9906-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/IMG_9925-1-scaled.jpg"
+            "./wp-content/uploads/2025/07/IMG_9906-scaled.jpg",
+            "./wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg",
+            "./wp-content/uploads/2025/07/IMG_9925-1-scaled.jpg"
         ],
         "Traditional & Seemantham": [
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Seemantham-4.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/Haldi-backdrop-3-2-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/Baby-backdrop-1-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/backdrop-2-1-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/05/31782321-EE45-4F6A-9482-25F39324F8B7-scaled.jpg"
+            "./wp-content/uploads/2025/07/Seemantham-4.jpg",
+            "./wp-content/uploads/2025/05/Haldi-backdrop-3-2-scaled.jpg",
+            "./wp-content/uploads/2025/05/Baby-backdrop-1-scaled.jpg",
+            "./wp-content/uploads/2025/05/backdrop-2-1-scaled.jpg",
+            "./wp-content/uploads/2025/05/31782321-EE45-4F6A-9482-25F39324F8B7-scaled.jpg"
         ],
         "Event Highlights": [
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0012-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/12/IMG_0670-2-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0048-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/09/IMG_0079-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/12/IMG_0755-2-scaled.jpg",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-1.png",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-2-scaled.png",
-            "https://petalsparadiseevents.com/wp-content/uploads/2025/07/image-scaled.png"
+            "./wp-content/uploads/2025/09/IMG_0012-scaled.jpg",
+            "./wp-content/uploads/2025/12/IMG_0670-2-scaled.jpg",
+            "./wp-content/uploads/2025/09/IMG_0048-scaled.jpg",
+            "./wp-content/uploads/2025/09/IMG_0079-scaled.jpg",
+            "./wp-content/uploads/2025/12/IMG_0755-2-scaled.jpg",
+            "./wp-content/uploads/2025/07/image-1.png",
+            "./wp-content/uploads/2025/07/image-2-scaled.png",
+            "./wp-content/uploads/2025/07/image-scaled.png"
         ]
     };
 
@@ -676,21 +676,21 @@ function renderGallery() {
 
 function renderVideos() {
     const videos = [
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/09/Wedding-Set-up-@dcwarmemorial-petalsparadiseevents-eventrentals-eventdecor-weddingsetup-dcw.mp4", title: "Wedding Set-up @ DC War Memorial" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/12/IMG_0560.mov", title: "Elegant Event Highlight" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/09/Winnie-the-Pooh-Themed-Birthday-DecorThank-you-@tdupexperience-It-was-great-collaborating-with-y.mp4", title: "Winnie the Pooh Themed Birthday" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/09/Bridal-Shower-Decorpetalsparadiseevents-eventdecor-eventrentals-babyshowerdecor-birthdaydec.mp4", title: "Bridal Shower Decor" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Seemantham-Video-1.mp4", title: "Seemantham Celebration" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/07/July-4th-Video-1.mp4", title: "July 4th Celebration" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Bday-Decor-Video.mp4", title: "Birthday Party Setup" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Baby-Shower-Video.mp4", title: "Baby Shower Highlights" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/07/Seemantham-Video.mp4", title: "Traditional Seemantham" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/7BB8EC83-E840-4082-9C8D-C2B664F3C78Asegment_video_2.mp4", title: "Grand Event Setup" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/0B6B56B8-F9AD-466F-B758-DEC86D60898Dsegment_video_1.mp4", title: "Ceremony Backdrop" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/Sharing-some-recent-event-setups-we-had-pleasure-meeting-some-nice-people-🫰1030-tent-available-for-rent.eventrental-event-decor.mp4", title: "Recent Tent & Decor Setups" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/House-warming-decoreventdecor-eventrentals-petalsparadiseevents-babyshower.mp4", title: "House Warming Decor" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/Birthday-Decor.Please-contact-us-for-any-event-decorations.birthdaydecor-babyshower-graduationparty🎓-sweet16.mp4", title: "Dream Birthday Decorations" },
-        { url: "https://petalsparadiseevents.com/wp-content/uploads/2025/06/Baby-Shower-Decor-🎈eventdecoration-babyshowerdecor-petalsparadiseevents-eventrentals.mp4", title: "Deluxe Baby Shower Decor" }
+        { url: "./wp-content/uploads/2025/09/Wedding-Set-up-@dcwarmemorial-petalsparadiseevents-eventrentals-eventdecor-weddingsetup-dcw.mp4", title: "Wedding Set-up @ DC War Memorial" },
+        { url: "./wp-content/uploads/2025/12/IMG_0560.mov", title: "Elegant Event Highlight" },
+        { url: "./wp-content/uploads/2025/09/Winnie-the-Pooh-Themed-Birthday-DecorThank-you-@tdupexperience-It-was-great-collaborating-with-y.mp4", title: "Winnie the Pooh Themed Birthday" },
+        { url: "./wp-content/uploads/2025/09/Bridal-Shower-Decorpetalsparadiseevents-eventdecor-eventrentals-babyshowerdecor-birthdaydec.mp4", title: "Bridal Shower Decor" },
+        { url: "./wp-content/uploads/2025/07/Seemantham-Video-1.mp4", title: "Seemantham Celebration" },
+        { url: "./wp-content/uploads/2025/07/July-4th-Video-1.mp4", title: "July 4th Celebration" },
+        { url: "./wp-content/uploads/2025/07/Bday-Decor-Video.mp4", title: "Birthday Party Setup" },
+        { url: "./wp-content/uploads/2025/07/Baby-Shower-Video.mp4", title: "Baby Shower Highlights" },
+        { url: "./wp-content/uploads/2025/07/Seemantham-Video.mp4", title: "Traditional Seemantham" },
+        { url: "./wp-content/uploads/2025/06/7BB8EC83-E840-4082-9C8D-C2B664F3C78Asegment_video_2.mp4", title: "Grand Event Setup" },
+        { url: "./wp-content/uploads/2025/06/0B6B56B8-F9AD-466F-B758-DEC86D60898Dsegment_video_1.mp4", title: "Ceremony Backdrop" },
+        { url: "./wp-content/uploads/2025/06/Sharing-some-recent-event-setups-we-had-pleasure-meeting-some-nice-people-🫰1030-tent-available-for-rent.eventrental-event-decor.mp4", title: "Recent Tent & Decor Setups" },
+        { url: "./wp-content/uploads/2025/06/House-warming-decoreventdecor-eventrentals-petalsparadiseevents-babyshower.mp4", title: "House Warming Decor" },
+        { url: "./wp-content/uploads/2025/06/Birthday-Decor.Please-contact-us-for-any-event-decorations.birthdaydecor-babyshower-graduationparty🎓-sweet16.mp4", title: "Dream Birthday Decorations" },
+        { url: "./wp-content/uploads/2025/06/Baby-Shower-Decor-🎈eventdecoration-babyshowerdecor-petalsparadiseevents-eventrentals.mp4", title: "Deluxe Baby Shower Decor" }
     ];
 
     return `
