@@ -107,9 +107,21 @@ window.refreshRentalsUI = () => {
         `;
     }).join('');
     if (window.feather) feather.replace();
+
+    const stickyCart = document.getElementById('sticky-view-cart');
+    if (stickyCart) {
+        if (cart.length > 0) {
+            stickyCart.style.display = 'block';
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const btn = stickyCart.querySelector('a');
+            if (btn) btn.textContent = `View Cart (${totalItems} item${totalItems !== 1 ? 's' : ''})`;
+        } else {
+            stickyCart.style.display = 'none';
+        }
+    }
 };
 
-function showToast(message) {
+function showToast(message, showCartLink = false) {
     let container = document.getElementById('toast-container');
     if (!container) {
         container = document.createElement('div');
@@ -120,7 +132,11 @@ function showToast(message) {
 
     const toast = document.createElement('div');
     toast.className = 'toast';
-    toast.innerHTML = `<i data-feather="check-circle" style="color: var(--primary-color)"></i> <span>${message}</span>`;
+    let html = `<i data-feather="check-circle" style="color: var(--primary-color)"></i> <span>${message}</span>`;
+    if (showCartLink) {
+        html += ` <a href="#cart" style="color: var(--primary-color); margin-left: auto; font-weight: bold; text-decoration: underline;">View Cart</a>`;
+    }
+    toast.innerHTML = html;
 
     container.appendChild(toast);
     if (window.feather) feather.replace();
@@ -136,10 +152,10 @@ function addToCart(item) {
     const existing = cart.find(i => i.id === item.id);
     if (existing) {
         existing.quantity += 1;
-        showToast(`1 more ${item.title} added to cart. Total: ${existing.quantity}`);
+        showToast(`1 more ${item.title} added to cart. Total: ${existing.quantity}`, true);
     } else {
         cart.push({ ...item, quantity: 1 });
-        showToast(`Added ${item.title} to cart!`);
+        showToast(`Added ${item.title} to cart!`, true);
     }
     saveCart();
 }
@@ -255,7 +271,7 @@ function updateQuantity(id, change) {
             saveCart();
             const diff = Math.abs(change);
             if (change > 0) {
-                showToast(`${diff} item${diff > 1 ? 's' : ''} added for ${item.title}. Total: ${item.quantity}`);
+                showToast(`${diff} item${diff > 1 ? 's' : ''} added for ${item.title}. Total: ${item.quantity}`, true);
             } else {
                 showToast(`${diff} item${diff > 1 ? 's' : ''} removed for ${item.title}. Total: ${item.quantity}`);
             }
@@ -294,7 +310,7 @@ function setQuantity(id, newQty) {
     
     const diff = Math.abs(qty - oldQty);
     if (qty > oldQty) {
-        showToast(`${diff} more ${item.title} added to cart. Total: ${qty}`);
+        showToast(`${diff} more ${item.title} added to cart. Total: ${qty}`, true);
     } else {
         showToast(`${diff} ${item.title} removed from cart. Total: ${qty}`);
     }
@@ -514,6 +530,18 @@ function refreshRentalsUI() {
             }
         }
     });
+
+    const stickyCart = document.getElementById('sticky-view-cart');
+    if (stickyCart) {
+        if (cart.length > 0) {
+            stickyCart.style.display = 'block';
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const btn = stickyCart.querySelector('a');
+            if (btn) btn.textContent = `View Cart (${totalItems} item${totalItems !== 1 ? 's' : ''})`;
+        } else {
+            stickyCart.style.display = 'none';
+        }
+    }
 }
 
 function renderRentals() {
@@ -557,6 +585,11 @@ function renderRentals() {
                 <h3>Can't find what you're looking for?</h3>
                 <p style="color: var(--text-secondary); margin-top:1rem;">If there's a specific item you need for your event that isn't listed here, please let us know! We are constantly updating our inventory.</p>
                 <a href="#contact" class="btn btn-outline mt-2">Inquire About Missing Items</a>
+            </div>
+
+            <!-- Sticky Cart Button -->
+            <div id="sticky-view-cart" class="sticky-checkout-container" style="display: none;">
+                <a href="#cart" class="btn btn-primary" style="width: 100%; text-align:center;">View Cart</a>
             </div>
         </div>
     `;
