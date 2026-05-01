@@ -368,14 +368,13 @@ function renderBanner() {
         <div class="promo-banner">
             <div class="ticker-wrap">
                 <div class="ticker">
-                    <span class="ticker-item">🎓 CONGRATULATIONS CLASS OF 2026! 🎓</span>
-                    <span class="ticker-item">📞 QUESTIONS? CALL US AT <a href="tel:+18484486993">+1 848-448-6993</a></span>
+                    <span class="ticker-item">📞 QUESTIONS? CALL US AT +1 848-448-6993</span>
                     <span class="ticker-item">✨ EXCLUSIVE GRAD DECOR NOW AVAILABLE! ✨</span>
                     <span class="ticker-item">🎊 <a href="#graduation">EXPLORE GRAD COLLECTION</a> 🎊</span>
                     <span class="ticker-item">🚚 WE OFFER DELIVERY & PICKUP OPTIONS! 🚚</span>
                     <!-- Duplicate for seamless loop -->
                     <span class="ticker-item">🎓 CONGRATULATIONS CLASS OF 2026! 🎓</span>
-                    <span class="ticker-item">📞 QUESTIONS? CALL US AT <a href="tel:+18484486993">+1 848-448-6993</a></span>
+                    <span class="ticker-item">📞 QUESTIONS? CALL US AT +1 848-448-6993</span>
                     <span class="ticker-item">✨ EXCLUSIVE GRAD DECOR NOW AVAILABLE! ✨</span>
                     <span class="ticker-item">🎊 <a href="#graduation">EXPLORE GRAD COLLECTION</a> 🎊</span>
                 </div>
@@ -468,7 +467,7 @@ function renderFooter() {
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p><i data-feather="phone" style="width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
+                <p><i data-feather="phone" style="width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" class="phone-link">+1 848-448-6993</a></p>
                 <p><i data-feather="mail" style="width:16px; margin-right:8px;"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none;">contact@petalsparadiseevents.com</a></p>
                 <p><i data-feather="map-pin" style="width:16px; margin-right:8px;"></i> 25025 Coats Sq, Aldie, VA, 20105</p>
             </div>
@@ -1271,7 +1270,7 @@ function renderCheckout() {
                     </div>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
                         <i data-feather="info" style="width:16px; margin-right:4px; vertical-align:middle;"></i>
-                        Call us: <a href="tel:+18484486993" style="color: inherit; text-decoration: underline;">+1 848-448-6993</a>
+                        Call us: <a href="tel:+18484486993" class="phone-link" style="text-decoration: underline;">+1 848-448-6993</a>
                     </p>
                 </div>
             </div>
