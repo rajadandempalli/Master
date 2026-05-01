@@ -2,12 +2,14 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let appliedPromo = JSON.parse(localStorage.getItem('appliedPromo')) || null;
 let fulfillmentMethod = localStorage.getItem('fulfillmentMethod') || 'Pickup';
+let rentalDays = parseInt(localStorage.getItem('rentalDays')) || 1;
 let searchQuery = '';
 
 function saveCart(skipRouter = false) {
     localStorage.setItem('cart', JSON.stringify(cart));
     localStorage.setItem('appliedPromo', JSON.stringify(appliedPromo));
     localStorage.setItem('fulfillmentMethod', fulfillmentMethod);
+    localStorage.setItem('rentalDays', rentalDays);
     updateCartBadge();
     if (!skipRouter) {
         if (window.location.hash === '#cart' || window.location.hash === '#checkout') {
@@ -29,6 +31,11 @@ window.changeQty = (id, change) => updateQuantity(id, change);
 window.setQty = (id, qty) => setQuantity(id, qty);
 window.removeItem = (id) => removeFromCart(id);
 window.handleClearCart = () => clearCart();
+window.setRentalDays = (days) => {
+    rentalDays = parseInt(days) || 1;
+    if (rentalDays < 1) rentalDays = 1;
+    saveCart();
+};
 
 window.refreshRentalsUI = () => {
     const grid = document.getElementById('rentals-grid');
@@ -168,7 +175,7 @@ function getItemPrice(item) {
 }
 
 function getItemTotal(item) {
-    return getItemPrice(item) * item.quantity;
+    return getItemPrice(item) * item.quantity * rentalDays;
 }
 
 function getCartTotal() {
@@ -564,15 +571,15 @@ function renderRentals() {
 
             <!-- Search Bar -->
             <div style="max-width: 600px; margin: 0 auto 3rem;">
-                <form onsubmit="event.preventDefault(); window.handleSearch(event);" style="position: relative; display: flex; align-items: center; width: 100%;">
+                <form onsubmit="event.preventDefault(); window.handleSearch(event);" style="position: relative;">
                     <i data-feather="search" style="position: absolute; left: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--text-secondary); width: 20px;"></i>
                     <input type="text" 
                         placeholder="Search for backdrops, marquee letters, neon signs..." 
                         class="form-control" 
-                        style="padding-left: 3.5rem; padding-right: 110px; border-radius: 50px; height: 60px; font-size: 1.1rem; box-shadow: var(--shadow-sm); border: 2px solid var(--border-color); width: 100%;"
+                        style="padding-left: 3.5rem; border-radius: 50px; height: 60px; font-size: 1.1rem; box-shadow: var(--shadow-sm); border: 2px solid var(--border-color);"
                         oninput="window.handleSearch(event)"
                         value="${searchQuery}">
-                    <button type="submit" class="btn btn-primary" style="position: absolute; right: 6px; height: 48px; border-radius: 40px; padding: 0 1.5rem; margin: 0; font-size: 1rem; border: none; display: flex; align-items: center; justify-content: center;">Search</button>
+                    <button type="submit" style="display: none;"></button>
                 </form>
             </div>
 
@@ -917,6 +924,11 @@ function renderCart() {
                         </div>
                     </div>
 
+                    <div class="form-group" style="margin-top: 1.5rem;">
+                        <label class="form-label" style="font-size: 0.85rem;">Rental Duration (Days)</label>
+                        <input type="number" min="1" class="form-control" value="${rentalDays}" onchange="setRentalDays(this.value)" style="margin-top: 0.5rem; width: 100px;">
+                    </div>
+
                     ${fulfillmentMethod === 'Delivery' ? `
                         <div class="summary-row" style="margin-top: 0.5rem;">
                             <span>Delivery</span>
@@ -1005,6 +1017,7 @@ function renderCheckout() {
         
         body += `ORDER SUMMARY\n`;
         body += `-------------\n`;
+        body += `Rental Duration: ${rentalDays} Day(s)\n`;
         let total = 0;
         cart.forEach(item => {
             body += `- ${item.quantity}x ${item.title} ($${getItemTotal(item)})\n`;
