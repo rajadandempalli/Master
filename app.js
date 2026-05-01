@@ -462,8 +462,8 @@ function renderFooter() {
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p><i data-feather="phone" style="width:16px; margin-right:8px;"></i> +1 848-448-6993</p>
-                <p><i data-feather="mail" style="width:16px; margin-right:8px;"></i> contact@petalsparadiseevents.com</p>
+                <p><i data-feather="phone" style="width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
+                <p><i data-feather="mail" style="width:16px; margin-right:8px;"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none;">contact@petalsparadiseevents.com</a></p>
                 <p><i data-feather="map-pin" style="width:16px; margin-right:8px;"></i> 25025 Coats Sq, Aldie, VA, 20105</p>
             </div>
         </div>
@@ -482,7 +482,7 @@ function renderHome() {
                 <h1>Crafting Unforgettable Moments</h1>
                 <p>We specialize in transforming your celebrations into beautiful memories with elegant decor and personalized touches for every occasion.</p>
                 <div class="hero-btns">
-                    <a href="#rentals" class="btn btn-primary">Explore Rentalss</a>
+                    <a href="#rentals" class="btn btn-primary">Explore Rentals</a>
                     <a href="#contact" class="btn btn-outline">Contact Us</a>
                 </div>
             </div>
@@ -763,8 +763,8 @@ function renderContact() {
                 <div>
                     <div class="card" style="padding: 2rem; background: var(--surface-color);">
                         <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Contact Information</h3>
-                        <p style="margin-bottom: 1rem;"><i data-feather="phone"></i> +1 848-448-6993</p>
-                        <p style="margin-bottom: 1rem;"><i data-feather="mail"></i> contact@petalsparadiseevents.com</p>
+                        <p style="margin-bottom: 1rem;"><i data-feather="phone"></i> <a href="tel:+18484486993" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
+                        <p style="margin-bottom: 1rem;"><i data-feather="mail"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none;">contact@petalsparadiseevents.com</a></p>
                         <p style="margin-bottom: 1rem;"><i data-feather="map-pin"></i> 25025 Coats Sq, Aldie, VA, 20105</p>
                     </div>
                 </div>
@@ -1259,7 +1259,7 @@ function renderCheckout() {
                     </div>
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
                         <i data-feather="info" style="width:16px; margin-right:4px; vertical-align:middle;"></i>
-                        Call us: +1 848-448-6993
+                        Call us: <a href="tel:+18484486993" style="color: inherit; text-decoration: underline;">+1 848-448-6993</a>
                     </p>
                 </div>
             </div>
