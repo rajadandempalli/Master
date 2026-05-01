@@ -1,0 +1,1895 @@
+# Copyright (C) 2024 Hostinger
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger AI theme 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/hostinger-ai-"
+"theme\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-16T07:28:53+00:00\n"
+"PO-Revision-Date: 2025-06-03 12:05+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: hostinger-ai-theme\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 :(((n%100>19)||(( n%100==0)&&(n!"
+"=0)))? 2 : 1));\n"
+"X-Loco-Version: 2.7.2; wp-6.8"
+
+#: includes/Admin/AdminTranslations.php:10
+msgid ""
+"<span style=\"display: flex; flex-direction: column; gap: 8px;\"><h3 "
+"style=\"margin:0; font-size:16px\">Site couldn’t be created</h3> <p "
+"style=\"margin-top:0; font-size:14px; color:#727586\">That’s because of an "
+"issue on our end. Try creating your site again. </p></span>"
+msgstr ""
+"<span style=\"display: flex; flex-direction: column; gap: 8px;\"><h3 "
+"style=\"margin:0; font-size:16px\">Site-ul nu a putut fi creat</h3> <p "
+"style=\"margin-top:0; font-size:14px; color:#727586\">A apărut o problemă. "
+"Te rugăm să încerci din nou crearea site-ul. </p></span>"
+
+#: includes/Settings/Theme.php:94
+msgid "Adjust how elements are displayed on your website:"
+msgstr "Ajustează modul în care elementele sunt afișate pe site-ul tău web:"
+
+#: includes/Admin/AdminTranslations.php:18
+msgid "Affiliate marketing site"
+msgstr "Site de marketing afiliat"
+
+#: includes/Builder/Woo/i18n/countries.php:5
+#, fuzzy
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: includes/Admin/AdminTranslations.php:11 includes/Admin/Menu.php:21
+#: includes/Admin/Menu.php:22
+msgid "AI Website Creation"
+msgstr "Crearea site-ului cu AI"
+
+#: includes/Builder/Woo/i18n/countries.php:7
+#, fuzzy
+msgid "Albania"
+msgstr "Albania"
+
+#: includes/Builder/Woo/i18n/countries.php:8
+#, fuzzy
+msgid "Algeria"
+msgstr "Algeria"
+
+#: includes/Builder/NavigationBuilder.php:205
+msgid "All rights reserved."
+msgstr "Toate drepturile rezervate."
+
+#: includes/Builder/Woo/i18n/countries.php:9
+#, fuzzy
+msgid "American Samoa"
+msgstr "Samoa Americană"
+
+#: includes/Shortcodes/ContactForm.php:26
+msgid "An error occurred. Please try again later."
+msgstr "A apărut o eroare. Te rugăm să încerci din nou mai târziu."
+
+#: includes/Builder/Woo/i18n/countries.php:10
+#, fuzzy
+msgid "Andorra"
+msgstr "Andorra"
+
+#: includes/Builder/Woo/i18n/countries.php:11
+#, fuzzy
+msgid "Angola"
+msgstr "Angola"
+
+#: includes/Builder/Woo/i18n/countries.php:12
+#, fuzzy
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: includes/Builder/Woo/i18n/countries.php:13
+#, fuzzy
+msgid "Antarctica"
+msgstr "Antarctica"
+
+#: includes/Builder/Woo/i18n/countries.php:14
+#, fuzzy
+msgid "Antigua and Barbuda"
+msgstr "Antigua și Barbuda"
+
+#: includes/Builder/Woo/i18n/countries.php:15
+#, fuzzy
+msgid "Argentina"
+msgstr "Argentina"
+
+#: includes/Builder/Woo/i18n/countries.php:16
+#, fuzzy
+msgid "Armenia"
+msgstr "Armenia"
+
+#: includes/Builder/Woo/i18n/countries.php:17
+#, fuzzy
+msgid "Aruba"
+msgstr "Aruba"
+
+#. %s php version
+#: functions.php:40
+msgid "Attention:"
+msgstr "Atenție:"
+
+#: includes/Builder/Woo/i18n/countries.php:18
+#, fuzzy
+msgid "Australia"
+msgstr "Australia"
+
+#: includes/Builder/Woo/i18n/countries.php:19
+#, fuzzy
+msgid "Austria"
+msgstr "Austria"
+
+#: includes/Builder/Woo/i18n/countries.php:20
+#, fuzzy
+msgid "Azerbaijan"
+msgstr "Azerbaidjan"
+
+#: includes/Admin/AdminTranslations.php:27
+msgid "Back"
+msgstr "Înapoi"
+
+#: includes/Builder/Woo/i18n/countries.php:21
+#, fuzzy
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: includes/Builder/Woo/i18n/countries.php:22
+#, fuzzy
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: includes/Builder/Woo/i18n/countries.php:23
+#, fuzzy
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: includes/Builder/Woo/i18n/countries.php:24
+#, fuzzy
+msgid "Barbados"
+msgstr "Barbados"
+
+#: includes/Builder/Woo/i18n/countries.php:25
+#, fuzzy
+msgid "Belarus"
+msgstr "Belarus"
+
+#: includes/Builder/Woo/i18n/countries.php:27
+#, fuzzy
+msgid "Belau"
+msgstr "Belau"
+
+#: includes/Builder/Woo/i18n/countries.php:26
+#, fuzzy
+msgid "Belgium"
+msgstr "Belgia"
+
+#: includes/Builder/Woo/i18n/countries.php:28
+#, fuzzy
+msgid "Belize"
+msgstr "Belize"
+
+#: includes/Builder/Woo/i18n/countries.php:29
+#, fuzzy
+msgid "Benin"
+msgstr "Benin"
+
+#: includes/Builder/Woo/i18n/countries.php:30
+#, fuzzy
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: includes/Builder/Woo/i18n/countries.php:31
+#, fuzzy
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: gutenberg-blocks/Booking/block.json:1
+msgctxt "block description"
+msgid "A block with booking form integration"
+msgstr "Un bloc cu formular de rezervare integrat"
+
+#: gutenberg-blocks/Booking/block.json:1
+msgctxt "block title"
+msgid "Booking Block"
+msgstr "Bloc de rezervare"
+
+#: includes/Admin/AdminTranslations.php:20
+msgid "Blog"
+msgstr "Blog"
+
+#: includes/Builder/Woo/i18n/countries.php:32
+#, fuzzy
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: includes/Builder/Woo/i18n/countries.php:33
+#, fuzzy
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Bonaire, Saint Eustatius și Saba"
+
+#: includes/Admin/AdminTranslations.php:22
+msgid "Booking"
+msgstr "Rezervare"
+
+#: gutenberg-blocks/Booking/Booking.php:76
+msgid "Bookings"
+msgstr "Rezervări"
+
+#: includes/Builder/Woo/i18n/countries.php:34
+#, fuzzy
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia și Herțegovina"
+
+#: includes/Builder/Woo/i18n/countries.php:35
+#, fuzzy
+msgid "Botswana"
+msgstr "Botswana"
+
+#: includes/Builder/Woo/i18n/countries.php:36
+#, fuzzy
+msgid "Bouvet Island"
+msgstr "Insula Bouvet"
+
+#: includes/Admin/AdminTranslations.php:13
+msgid "Brand name"
+msgstr "Numele brandului"
+
+#: includes/Builder/Woo/i18n/countries.php:37
+#, fuzzy
+msgid "Brazil"
+msgstr "Brazilia"
+
+#: includes/Builder/Woo/i18n/countries.php:38
+#, fuzzy
+msgid "British Indian Ocean Territory"
+msgstr "Teritoriul britanic din Oceanul Indian"
+
+#: includes/Builder/Woo/i18n/countries.php:39
+#, fuzzy
+msgid "Brunei"
+msgstr "Brunei"
+
+#: includes/Admin/AdminTranslations.php:31
+msgid "Building content"
+msgstr "Se crează conținut"
+
+#: includes/Builder/Woo/i18n/countries.php:40
+#, fuzzy
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: includes/Builder/Woo/i18n/countries.php:41
+#, fuzzy
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: includes/Builder/Woo/i18n/countries.php:42
+#, fuzzy
+msgid "Burundi"
+msgstr "Burundi"
+
+#: includes/Admin/AdminTranslations.php:17
+msgid "Business and services"
+msgstr "Afacere și servicii"
+
+#: includes/Builder/Woo/i18n/countries.php:43
+#, fuzzy
+msgid "Cambodia"
+msgstr "Cambodgia"
+
+#: includes/Builder/Woo/i18n/countries.php:44
+#, fuzzy
+msgid "Cameroon"
+msgstr "Camerun"
+
+#: includes/Builder/Woo/i18n/countries.php:45
+#, fuzzy
+msgid "Canada"
+msgstr "Canada"
+
+#: includes/Admin/AdminTranslations.php:40
+msgid "Cancel"
+msgstr "Anulează"
+
+#: includes/Builder/Woo/i18n/countries.php:46
+#, fuzzy
+msgid "Cape Verde"
+msgstr "Capul Verde"
+
+#: includes/Builder/WebsiteBuilder.php:369
+#, fuzzy
+msgid "Cart"
+msgstr "Cart"
+
+#: includes/Builder/Woo/i18n/countries.php:47
+#, fuzzy
+msgid "Cayman Islands"
+msgstr "Insulele Cayman"
+
+#: includes/Builder/Woo/i18n/countries.php:48
+#, fuzzy
+msgid "Central African Republic"
+msgstr "Republica Centrafricană"
+
+#: includes/Builder/Woo/i18n/countries.php:49
+#, fuzzy
+msgid "Chad"
+msgstr "Ciad"
+
+#: includes/Settings/Theme.php:110
+msgid "Check this box to hide the header element on all pages"
+msgstr ""
+"Bifează această casetă pentru a ascunde elementul antet pe toate paginile"
+
+#: includes/Builder/WebsiteBuilder.php:378
+#, fuzzy
+msgid "Checkout"
+msgstr "Checkout"
+
+#: includes/Builder/Woo/i18n/countries.php:50
+#, fuzzy
+msgid "Chile"
+msgstr "Chile"
+
+#: includes/Builder/Woo/i18n/countries.php:51
+#, fuzzy
+msgid "China"
+msgstr "China"
+
+#: includes/Builder/Woo/i18n/countries.php:52
+#, fuzzy
+msgid "Christmas Island"
+msgstr "Insula Crăciunului"
+
+#: includes/Builder/Woo/i18n/countries.php:53
+#, fuzzy
+msgid "Cocos (Keeling) Islands"
+msgstr "Insulele Cocos (Keeling)"
+
+#: includes/Builder/Woo/i18n/countries.php:54
+#, fuzzy
+msgid "Colombia"
+msgstr "Columbia"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 1 (Section backgrounds)"
+msgstr "Culoarea 1 (Fundalurile pentru secțiune)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 2 (Section backgrounds)"
+msgstr "Culoarea 2 (Fundalurile pentru secțiuni"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 3 (Button background)"
+msgstr "Culoarea 3 (Fundalul pentru buton)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Dark (Text on Light and Color 1)"
+msgstr "Închis (Text pe deschis și culoarea 1)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Grey (Form borders)"
+msgstr "Gri (Marginile formularului)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Light (Text on Color 2 and Gradient)"
+msgstr "Deschis (Text pe culoarea 2 și gradient)"
+
+#: includes/Builder/Woo/i18n/countries.php:55
+#, fuzzy
+msgid "Comoros"
+msgstr "Comore"
+
+#: includes/Builder/Woo/i18n/countries.php:56
+#, fuzzy
+msgid "Congo (Brazzaville)"
+msgstr "Congo (Brazzaville)"
+
+#: includes/Builder/Woo/i18n/countries.php:57
+#, fuzzy
+msgid "Congo (Kinshasa)"
+msgstr "Congo (Kinshasa)"
+
+#: includes/Builder/NavigationBuilder.php:351
+msgid "Contacts"
+msgstr "Contacte"
+
+#: includes/Admin/AdminTranslations.php:41
+msgid "Continue"
+msgstr "Continuă"
+
+#: includes/Builder/Woo/i18n/countries.php:58
+#, fuzzy
+msgid "Cook Islands"
+msgstr "Insulele Cook"
+
+#: includes/Builder/Woo/i18n/countries.php:59
+#, fuzzy
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: includes/Admin/AdminTranslations.php:25
+#, fuzzy
+msgid "Country"
+msgstr "Țara"
+
+#: includes/Admin/AdminTranslations.php:26
+msgid "Create"
+msgstr "Creează"
+
+#: includes/Admin/AdminTranslations.php:32
+msgid "Create again"
+msgstr "Creează din nou"
+
+#: includes/Builder/Woo/i18n/countries.php:60
+#, fuzzy
+msgid "Croatia"
+msgstr "Croația"
+
+#: includes/Builder/Woo/i18n/countries.php:61
+#, fuzzy
+msgid "Cuba"
+msgstr "Cuba"
+
+#: includes/Builder/Woo/i18n/countries.php:62
+#, fuzzy
+msgid "Cura&ccedil;ao"
+msgstr "Cura&ccedil;ao"
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "No title"
+msgstr "Fără titlu"
+
+#: includes/Builder/Woo/i18n/countries.php:63
+#, fuzzy
+msgid "Cyprus"
+msgstr "Cipru"
+
+#: includes/Builder/Woo/i18n/countries.php:64
+#, fuzzy
+msgid "Czech Republic"
+msgstr "Republica Cehă"
+
+#: gutenberg-blocks/Booking/Booking.php:85
+msgid "Date"
+msgstr "Dată"
+
+#: includes/Builder/Woo/i18n/countries.php:65
+#, fuzzy
+msgid "Denmark"
+msgstr "Danemarca"
+
+#: includes/Admin/AdminTranslations.php:23
+msgid "Describe your site"
+msgstr "Descrie-ți site-ul"
+
+#: includes/Admin/AdminTranslations.php:24
+msgid "Description"
+msgstr "Descriere"
+
+#: includes/Shortcodes/ContactForm.php:151
+msgid "Details:"
+msgstr "Detalii:"
+
+#: includes/Settings/Theme.php:53
+msgid "Display Settings"
+msgstr "Setări afișaj"
+
+#: includes/Builder/Woo/i18n/countries.php:66
+#, fuzzy
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: includes/Admin/Surveys.php:35
+msgid "Do you have any comments/suggestions to improve our AI tools?"
+msgstr "Ai comentarii/sugestii pentru îmbunătățirea instrumentelor noastre AI?"
+
+#: includes/Builder/Woo/i18n/countries.php:67
+#, fuzzy
+msgid "Dominica"
+msgstr "Dominica"
+
+#: includes/Builder/Woo/i18n/countries.php:68
+#, fuzzy
+msgid "Dominican Republic"
+msgstr "Republica Dominicană"
+
+#: includes/Builder/Woo/i18n/countries.php:69
+#, fuzzy
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: includes/Hooks.php:95 includes/Admin/AdminTranslations.php:33
+msgid "Edit site"
+msgstr "Editează site-ul"
+
+#: includes/Builder/Woo/i18n/countries.php:70
+#, fuzzy
+msgid "Egypt"
+msgstr "Egipt"
+
+#: includes/Builder/Woo/i18n/countries.php:71
+#, fuzzy
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: includes/Shortcodes/ContactForm.php:69
+msgid "Email"
+msgstr "Email"
+
+#: includes/Shortcodes/ContactForm.php:153
+msgid "Email:"
+msgstr "Email:"
+
+#: includes/Admin/AdminTranslations.php:35
+msgid "Enter at least 11 characters"
+msgstr "Introdu cel puțin 11 caractere"
+
+#: includes/Builder/Woo/i18n/countries.php:72
+#, fuzzy
+msgid "Equatorial Guinea"
+msgstr "Guineea Ecuatorială"
+
+#: includes/Builder/Woo/i18n/countries.php:73
+#, fuzzy
+msgid "Eritrea"
+msgstr "Eritreea"
+
+#: includes/Builder/Woo/i18n/countries.php:74
+#, fuzzy
+msgid "Estonia"
+msgstr "Estonia"
+
+#: includes/Builder/Woo/i18n/countries.php:216
+#, fuzzy
+msgid "Eswatini"
+msgstr "Eswatini"
+
+#: includes/Builder/Woo/i18n/countries.php:75
+#, fuzzy
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: includes/Admin/AdminTranslations.php:38
+msgid "Existing content will be deleted"
+msgstr "Conținutul existent va fi șters"
+
+#: includes/Admin/Templates/featured-image-metabox.php:7
+msgid "External image can be used to show featured image."
+msgstr "Imaginea externă poate fi utilizată pentru a afișa imaginea promovată."
+
+#: includes/Admin/Templates/featured-image-metabox.php:12
+msgid "External Image URL"
+msgstr "URL imagine externă"
+
+#: includes/Shortcodes/ContactForm.php:173
+msgid "Failed to send email. Please try again later."
+msgstr "A eșuat trimiterea emailului. Te rugăm să încerci din nou mai târziu."
+
+#: includes/Builder/Woo/i18n/countries.php:76
+#, fuzzy
+msgid "Falkland Islands"
+msgstr "Insulele Falkland"
+
+#: includes/Builder/Woo/i18n/countries.php:77
+#, fuzzy
+msgid "Faroe Islands"
+msgstr "Insulele Feroe"
+
+#: includes/Admin/Hooks.php:36
+msgid "Featured Image with URL"
+msgstr "Imagine promovată cu URL"
+
+#: includes/Builder/Woo/i18n/countries.php:78
+#, fuzzy
+msgid "Fiji"
+msgstr "Fiji"
+
+#: includes/Builder/Woo/i18n/countries.php:79
+#, fuzzy
+msgid "Finland"
+msgstr "Finlanda"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Caudex"
+msgstr "Caudex"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Cormorant"
+msgstr "Cormoran"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr "DM Sans"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "DM Serif Display"
+msgstr "Afișaj DM Serif"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Fira Sans"
+msgstr "Fira Sans"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Gruppo"
+msgstr "Grup"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Junge"
+msgstr "Junge"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr "Monospace"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Nunito Sans"
+msgstr "Nunito Sans"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr "Afișaj Playfair"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Poppins"
+msgstr "Poppins"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Prompt"
+msgstr "Prompt"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Prosto One"
+msgstr "Prosto One"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr "Roboto"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Serif"
+msgstr "Serif"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "System"
+msgstr "System"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Titillium Web"
+msgstr "Titillium Web"
+
+#: theme.json:1
+#, fuzzy
+msgctxt "Font family name"
+msgid "Trirong"
+msgstr "Trirong"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Mare"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Mediu"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Mic"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XL"
+msgstr "XL"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XXL"
+msgstr "XXL"
+
+#: includes/Builder/Woo/i18n/countries.php:80
+#, fuzzy
+msgid "France"
+msgstr "Franța"
+
+#: includes/Builder/Woo/i18n/countries.php:81
+#, fuzzy
+msgid "French Guiana"
+msgstr "Guiana Franceză"
+
+#: includes/Builder/Woo/i18n/countries.php:82
+#, fuzzy
+msgid "French Polynesia"
+msgstr "Polinezia Franceză"
+
+#: includes/Builder/Woo/i18n/countries.php:83
+#, fuzzy
+msgid "French Southern Territories"
+msgstr "Teritoriile sudice franceze"
+
+#: includes/Builder/Woo/i18n/countries.php:84
+#, fuzzy
+msgid "Gabon"
+msgstr "Gabon"
+
+#: includes/Builder/Woo/i18n/countries.php:85
+#, fuzzy
+msgid "Gambia"
+msgstr "Gambia"
+
+#: includes/Admin/AdminTranslations.php:28
+msgid "Generating colors"
+msgstr "Se generează culorile"
+
+#: includes/Admin/AdminTranslations.php:30
+msgid "Generating content"
+msgstr "Se generează conținutul"
+
+#: includes/Admin/AdminTranslations.php:29
+msgid "Generating structure"
+msgstr "Se generează structura"
+
+#: includes/Builder/Woo/i18n/countries.php:86
+#, fuzzy
+msgid "Georgia"
+msgstr "Georgia"
+
+#: includes/Builder/Woo/i18n/countries.php:87
+#, fuzzy
+msgid "Germany"
+msgstr "Germania"
+
+#: includes/Builder/Woo/i18n/countries.php:88
+#, fuzzy
+msgid "Ghana"
+msgstr "Ghana"
+
+#: includes/Builder/Woo/i18n/countries.php:89
+#, fuzzy
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: includes/Admin/AdminTranslations.php:34
+msgid "Give us a minute"
+msgstr "Suntem gata imediat"
+
+#: theme.json:1
+msgctxt "Gradient name"
+msgid "Section background gradient"
+msgstr "Fundal gradient pentru secțiune"
+
+#: includes/Admin/AdminTranslations.php:37
+msgid "Great description! Feel free to add more details"
+msgstr "Ce descriere faină! Nu ezita să adaugi mai multe detalii"
+
+#: includes/Builder/Woo/i18n/countries.php:90
+#, fuzzy
+msgid "Greece"
+msgstr "Grecia"
+
+#: includes/Builder/Woo/i18n/countries.php:91
+#, fuzzy
+msgid "Greenland"
+msgstr "Groenlanda"
+
+#: includes/Builder/Woo/i18n/countries.php:92
+#, fuzzy
+msgid "Grenada"
+msgstr "Grenada"
+
+#: includes/Builder/Woo/i18n/countries.php:93
+#, fuzzy
+msgid "Guadeloupe"
+msgstr "Guadelupa"
+
+#: includes/Builder/Woo/i18n/countries.php:94
+#, fuzzy
+msgid "Guam"
+msgstr "Guam"
+
+#: includes/Builder/Woo/i18n/countries.php:95
+#, fuzzy
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: includes/Builder/Woo/i18n/countries.php:96
+#, fuzzy
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: includes/Builder/Woo/i18n/countries.php:97
+#, fuzzy
+msgid "Guinea"
+msgstr "Guineea"
+
+#: includes/Builder/Woo/i18n/countries.php:98
+#, fuzzy
+msgid "Guinea-Bissau"
+msgstr "Guineea-Bissau"
+
+#: includes/Builder/Woo/i18n/countries.php:99
+#, fuzzy
+msgid "Guyana"
+msgstr "Guyana"
+
+#: includes/Builder/Woo/i18n/countries.php:100
+#, fuzzy
+msgid "Haiti"
+msgstr "Haiti"
+
+#: includes/Builder/Woo/i18n/countries.php:101
+#, fuzzy
+msgid "Heard Island and McDonald Islands"
+msgstr "Insula Heard și Insulele McDonald"
+
+#: includes/Shortcodes/ContactForm.php:149
+msgid "Hello,"
+msgstr "Bună ziua,"
+
+#: includes/Settings/Theme.php:60
+msgid "Hide Header"
+msgstr "Ascunde antetul"
+
+#: includes/Builder/Woo/i18n/countries.php:102
+#, fuzzy
+msgid "Honduras"
+msgstr "Honduras"
+
+#: includes/Builder/Woo/i18n/countries.php:103
+#, fuzzy
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#. Author of the theme
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#. Name of the theme
+msgid "Hostinger AI theme"
+msgstr "Hostinger AI theme"
+
+#. Description of the theme
+msgid ""
+"Hostinger AI theme built with SEO and mobile responsiveness in mind, this "
+"theme ensures optimal performance and a better online presence."
+msgstr ""
+"Hostinger AI theme, construită ținând cont de SEO și de adaptabilitatea la "
+"dispozitivele mobile, asigură o performanță optimă și o prezență online mai "
+"bună."
+
+#: includes/Admin/Surveys.php:31
+msgid ""
+"How would you rate your experience using our AI website builder to create "
+"your site? (Scale 1-10)"
+msgstr ""
+"Cum ai evalua experiența ta de utilizare a constructorului nostru AI de site-"
+"uri în procesul de creare a site-ului? (Pe o scară de la 1-10)"
+
+#. Author URI of the theme
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#: includes/Builder/Woo/i18n/countries.php:104
+#, fuzzy
+msgid "Hungary"
+msgstr "Ungaria"
+
+#: includes/Shortcodes/ContactForm.php:42
+msgid ""
+"I consent to use of provided personal data for the purpose of responding to "
+"the request as described in"
+msgstr ""
+"Sunt de acord cu utilizarea datelor cu caracter personal furnizate în scopul "
+"de a răspunde la cerere, astfel cum este descris în"
+
+#: includes/Builder/Woo/i18n/countries.php:105
+#, fuzzy
+msgid "Iceland"
+msgstr "Islanda"
+
+#: includes/Builder/Woo/i18n/countries.php:106
+#, fuzzy
+msgid "India"
+msgstr "India"
+
+#: includes/Builder/Woo/i18n/countries.php:107
+#, fuzzy
+msgid "Indonesia"
+msgstr "Indonezia"
+
+#: includes/Builder/Woo/i18n/countries.php:108
+#, fuzzy
+msgid "Iran"
+msgstr "Iran"
+
+#: includes/Builder/Woo/i18n/countries.php:109
+#, fuzzy
+msgid "Iraq"
+msgstr "Irak"
+
+#: includes/Builder/Woo/i18n/countries.php:110
+#, fuzzy
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: includes/Builder/Woo/i18n/countries.php:111
+#, fuzzy
+msgid "Isle of Man"
+msgstr "Insula Man"
+
+#: includes/Builder/Woo/i18n/countries.php:112
+#, fuzzy
+msgid "Israel"
+msgstr "Israel"
+
+#: patterns/hidden-404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Se pare că nu a fost găsit nimic în această locație. Vrei să încerci o "
+"căutare?"
+
+#: includes/Builder/Woo/i18n/countries.php:113
+#, fuzzy
+msgid "Italy"
+msgstr "Italia"
+
+#: includes/Builder/Woo/i18n/countries.php:114
+#, fuzzy
+msgid "Ivory Coast"
+msgstr "Coasta de Fildeș"
+
+#: includes/Builder/Woo/i18n/countries.php:115
+#, fuzzy
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: includes/Builder/Woo/i18n/countries.php:116
+#, fuzzy
+msgid "Japan"
+msgstr "Japonia"
+
+#: includes/Builder/Woo/i18n/countries.php:117
+#, fuzzy
+msgid "Jersey"
+msgstr "Jersey"
+
+#: includes/Builder/Woo/i18n/countries.php:118
+#, fuzzy
+msgid "Jordan"
+msgstr "Iordania"
+
+#: includes/Builder/Woo/i18n/countries.php:119
+#, fuzzy
+msgid "Kazakhstan"
+msgstr "Kazahstan"
+
+#: includes/Builder/Woo/i18n/countries.php:120
+#, fuzzy
+msgid "Kenya"
+msgstr "Kenya"
+
+#: includes/Builder/Woo/i18n/countries.php:121
+#, fuzzy
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: includes/Builder/Woo/i18n/countries.php:122
+#, fuzzy
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: includes/Builder/Woo/i18n/countries.php:123
+#, fuzzy
+msgid "Kyrgyzstan"
+msgstr "Kârgâzstan"
+
+#: includes/Admin/AdminTranslations.php:21
+msgid "Landing"
+msgstr "Landing"
+
+#: includes/Builder/Woo/i18n/countries.php:124
+#, fuzzy
+msgid "Laos"
+msgstr "Laos"
+
+#: includes/Builder/Woo/i18n/countries.php:125
+#, fuzzy
+msgid "Latvia"
+msgstr "Letonia"
+
+#: includes/Builder/Woo/i18n/countries.php:126
+#, fuzzy
+msgid "Lebanon"
+msgstr "Liban"
+
+#: includes/Builder/Woo/i18n/countries.php:127
+#, fuzzy
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: includes/Admin/AdminTranslations.php:36
+msgid "Let us know more about your website to get the best result"
+msgstr ""
+"Pentru a obține cele mai bune rezultate, spune-ne mai multe despre site-ul "
+"tău web"
+
+#: includes/Builder/Woo/i18n/countries.php:128
+#, fuzzy
+msgid "Liberia"
+msgstr "Liberia"
+
+#: includes/Builder/Woo/i18n/countries.php:129
+#, fuzzy
+msgid "Libya"
+msgstr "Libia"
+
+#: includes/Builder/Woo/i18n/countries.php:130
+#, fuzzy
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: includes/Builder/Woo/i18n/countries.php:131
+#, fuzzy
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: includes/Builder/Woo/i18n/countries.php:132
+#, fuzzy
+msgid "Luxembourg"
+msgstr "Luxemburg"
+
+#: includes/Builder/Woo/i18n/countries.php:133
+#, fuzzy
+msgid "Macao"
+msgstr "Macao"
+
+#: includes/Builder/Woo/i18n/countries.php:135
+#, fuzzy
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: includes/Builder/Woo/i18n/countries.php:136
+#, fuzzy
+msgid "Malawi"
+msgstr "Malawi"
+
+#: includes/Builder/Woo/i18n/countries.php:137
+#, fuzzy
+msgid "Malaysia"
+msgstr "Malaezia"
+
+#: includes/Builder/Woo/i18n/countries.php:138
+#, fuzzy
+msgid "Maldives"
+msgstr "Maldive"
+
+#: includes/Builder/Woo/i18n/countries.php:139
+#, fuzzy
+msgid "Mali"
+msgstr "Mali"
+
+#: includes/Builder/Woo/i18n/countries.php:140
+#, fuzzy
+msgid "Malta"
+msgstr "Malta"
+
+#: includes/Builder/Woo/i18n/countries.php:141
+#, fuzzy
+msgid "Marshall Islands"
+msgstr "Insulele Marshall"
+
+#: includes/Builder/Woo/i18n/countries.php:142
+#, fuzzy
+msgid "Martinique"
+msgstr "Martinica"
+
+#: includes/Builder/Woo/i18n/countries.php:143
+#, fuzzy
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: includes/Builder/Woo/i18n/countries.php:144
+#, fuzzy
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: includes/Builder/Woo/i18n/countries.php:145
+#, fuzzy
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: includes/Builder/NavigationBuilder.php:350
+msgid "Menu"
+msgstr "Meniu"
+
+#: includes/Shortcodes/ContactForm.php:78
+msgid "Message"
+msgstr "Mesaj"
+
+#: includes/Shortcodes/ContactForm.php:154
+msgid "Message:"
+msgstr "Mesaj:"
+
+#: includes/Builder/Woo/i18n/countries.php:146
+#, fuzzy
+msgid "Mexico"
+msgstr "Mexic"
+
+#: includes/Builder/Woo/i18n/countries.php:147
+#, fuzzy
+msgid "Micronesia"
+msgstr "Micronezia"
+
+#: includes/Builder/Woo/i18n/countries.php:148
+#, fuzzy
+msgid "Moldova"
+msgstr "Moldova"
+
+#: includes/Builder/Woo/i18n/countries.php:149
+#, fuzzy
+msgid "Monaco"
+msgstr "Monaco"
+
+#: includes/Builder/Woo/i18n/countries.php:150
+#, fuzzy
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: includes/Builder/Woo/i18n/countries.php:151
+#, fuzzy
+msgid "Montenegro"
+msgstr "Muntenegru"
+
+#: includes/Builder/Woo/i18n/countries.php:152
+#, fuzzy
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: includes/Builder/Woo/i18n/countries.php:153
+#, fuzzy
+msgid "Morocco"
+msgstr "Maroc"
+
+#: includes/Builder/Woo/i18n/countries.php:154
+#, fuzzy
+msgid "Mozambique"
+msgstr "Mozambic"
+
+#: includes/Builder/WebsiteBuilder.php:387
+#, fuzzy
+msgid "My Account"
+msgstr "Contul meu"
+
+#: includes/Builder/Woo/i18n/countries.php:155
+#, fuzzy
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: includes/Shortcodes/ContactForm.php:60
+msgid "Name"
+msgstr "Nume"
+
+#: includes/Shortcodes/ContactForm.php:152
+msgid "Name:"
+msgstr "Nume:"
+
+#: includes/Builder/Woo/i18n/countries.php:156
+#, fuzzy
+msgid "Namibia"
+msgstr "Namibia"
+
+#: includes/Builder/Woo/i18n/countries.php:157
+#, fuzzy
+msgid "Nauru"
+msgstr "Nauru"
+
+#: includes/Builder/Woo/i18n/countries.php:158
+#, fuzzy
+msgid "Nepal"
+msgstr "Nepal"
+
+#: includes/Builder/Woo/i18n/countries.php:159
+#, fuzzy
+msgid "Netherlands"
+msgstr "Țările de Jos"
+
+#: includes/Builder/Woo/i18n/countries.php:160
+#, fuzzy
+msgid "New Caledonia"
+msgstr "Noua Caledonie"
+
+#: includes/Shortcodes/ContactForm.php:132
+msgid "New Contact Form Submission"
+msgstr "Trimitere nou formular de contact"
+
+#: includes/Builder/Woo/i18n/countries.php:161
+#, fuzzy
+msgid "New Zealand"
+msgstr "Noua Zeelandă"
+
+#: includes/Builder/Woo/i18n/countries.php:162
+#, fuzzy
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: includes/Builder/Woo/i18n/countries.php:163
+#, fuzzy
+msgid "Niger"
+msgstr "Niger"
+
+#: includes/Builder/Woo/i18n/countries.php:164
+#, fuzzy
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: includes/Builder/Woo/i18n/countries.php:165
+#, fuzzy
+msgid "Niue"
+msgstr "Niue"
+
+#: gutenberg-blocks/Booking/Booking.php:79
+msgid "No bookings yet."
+msgstr "Încă nu există rezervări."
+
+#: patterns/query.php:24
+msgid "No results found."
+msgstr "Nu s-au găsit rezultate."
+
+#: includes/Builder/Woo/i18n/countries.php:166
+#, fuzzy
+msgid "Norfolk Island"
+msgstr "Insula Norfolk"
+
+#: includes/Builder/Woo/i18n/countries.php:168
+#, fuzzy
+msgid "North Korea"
+msgstr "Coreea de Nord"
+
+#: includes/Builder/Woo/i18n/countries.php:134
+#, fuzzy
+msgid "North Macedonia"
+msgstr "Macedonia de Nord"
+
+#: includes/Builder/Woo/i18n/countries.php:167
+#, fuzzy
+msgid "Northern Mariana Islands"
+msgstr "Insulele Mariane de Nord"
+
+#: includes/Builder/Woo/i18n/countries.php:169
+#, fuzzy
+msgid "Norway"
+msgstr "Norvegia"
+
+#: includes/Shortcodes/ContactForm.php:176
+msgid "Not valid recipient email."
+msgstr "Emailul destinatarului nu este valid."
+
+#: includes/Builder/Woo/i18n/countries.php:170
+#, fuzzy
+msgid "Oman"
+msgstr "Oman"
+
+#: includes/Admin/AdminTranslations.php:19
+#, fuzzy
+msgid "Online store"
+msgstr "Magazin online"
+
+#: includes/Admin/AdminTranslations.php:15
+msgid "Other"
+msgstr "Altul/a"
+
+#: patterns/hidden-404.php:13
+msgid "Page not found"
+msgstr "Pagina nu a fost găsită"
+
+#: includes/Builder/Woo/i18n/countries.php:171
+#, fuzzy
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: includes/Builder/Woo/i18n/countries.php:172
+#, fuzzy
+msgid "Palestinian Territory"
+msgstr "Teritoriul palestinian"
+
+#: includes/Builder/Woo/i18n/countries.php:173
+#, fuzzy
+msgid "Panama"
+msgstr "Panama"
+
+#: includes/Builder/Woo/i18n/countries.php:174
+#, fuzzy
+msgid "Papua New Guinea"
+msgstr "Papua Noua Guinee"
+
+#: includes/Builder/Woo/i18n/countries.php:175
+#, fuzzy
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: patterns/hidden-404.php:2
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/hidden-post-meta.php:2
+msgctxt "Pattern title"
+msgid "Hidden post meta"
+msgstr "Postare ascunsă meta"
+
+#: patterns/query.php:2
+msgctxt "Pattern title"
+msgid "Query"
+msgstr "Solicitare"
+
+#: includes/Builder/Woo/i18n/countries.php:176
+#, fuzzy
+msgid "Peru"
+msgstr "Peru"
+
+#: includes/Builder/Woo/i18n/countries.php:177
+#, fuzzy
+msgid "Philippines"
+msgstr "Filipine"
+
+#: includes/Builder/Woo/i18n/countries.php:178
+#, fuzzy
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: includes/Shortcodes/ContactForm.php:123
+msgid "Please agree with privacy policy."
+msgstr "Te rugăm să îți exprimi acordul față de politica de confidențialitate."
+
+#: includes/Shortcodes/ContactForm.php:128
+msgid "Please enter a valid email address."
+msgstr "Te rugăm să introduci o adresă de email validă."
+
+#: includes/Builder/Woo/i18n/countries.php:179
+#, fuzzy
+msgid "Poland"
+msgstr "Polonia"
+
+#: includes/Admin/AdminTranslations.php:16
+msgid "Portfolio"
+msgstr "Portofoliu"
+
+#: includes/Builder/Woo/i18n/countries.php:180
+#, fuzzy
+msgid "Portugal"
+msgstr "Portugalia"
+
+#: includes/Shortcodes/ContactForm.php:44
+msgid "Privacy Policy"
+msgstr "Politica de confidențialitate"
+
+#: includes/Rest/BuilderRoutes.php:227
+msgid "Problem building content."
+msgstr "Am întâmpinat o problemă în procesul de creare a conținutului."
+
+#: includes/Rest/BuilderRoutes.php:183
+msgid "Problem generating content."
+msgstr "Am întâmpinat o problemă în procesul de generare a conținutului."
+
+#: includes/Builder/Woo/i18n/countries.php:181
+#, fuzzy
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: includes/Builder/Woo/i18n/countries.php:182
+#, fuzzy
+msgid "Qatar"
+msgstr "Qatar"
+
+#: includes/Builder/Woo/i18n/countries.php:183
+#, fuzzy
+msgid "Reunion"
+msgstr "Reuniune"
+
+#: includes/Builder/Woo/i18n/countries.php:184
+#, fuzzy
+msgid "Romania"
+msgstr "România"
+
+#: includes/Builder/Woo/i18n/countries.php:185
+#, fuzzy
+msgid "Russia"
+msgstr "Rusia"
+
+#: includes/Builder/Woo/i18n/countries.php:186
+#, fuzzy
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: includes/Builder/Woo/i18n/countries.php:196
+#, fuzzy
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "S&atilde;o Tom&eacute; și Pr&iacute;ncipe"
+
+#: includes/Builder/Woo/i18n/countries.php:187
+#, fuzzy
+msgid "Saint Barth&eacute;lemy"
+msgstr "Saint Barth&eacute;lemy"
+
+#: includes/Builder/Woo/i18n/countries.php:188
+#, fuzzy
+msgid "Saint Helena"
+msgstr "Sfânta Elena"
+
+#: includes/Builder/Woo/i18n/countries.php:189
+#, fuzzy
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts și Nevis"
+
+#: includes/Builder/Woo/i18n/countries.php:190
+#, fuzzy
+msgid "Saint Lucia"
+msgstr "Sfânta Lucia"
+
+#: includes/Builder/Woo/i18n/countries.php:192
+#, fuzzy
+msgid "Saint Martin (Dutch part)"
+msgstr "Saint Martin (partea olandeză)"
+
+#: includes/Builder/Woo/i18n/countries.php:191
+#, fuzzy
+msgid "Saint Martin (French part)"
+msgstr "Saint Martin (partea franceză)"
+
+#: includes/Builder/Woo/i18n/countries.php:193
+#, fuzzy
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint Pierre și Miquelon"
+
+#: includes/Builder/Woo/i18n/countries.php:194
+#, fuzzy
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent și Grenadine"
+
+#: includes/Builder/Woo/i18n/countries.php:250
+#, fuzzy
+msgid "Samoa"
+msgstr "Samoa"
+
+#: includes/Builder/Woo/i18n/countries.php:195
+#, fuzzy
+msgid "San Marino"
+msgstr "San Marino"
+
+#: includes/Builder/Woo/i18n/countries.php:197
+#, fuzzy
+msgid "Saudi Arabia"
+msgstr "Arabia Saudită"
+
+#: includes/Shortcodes/ContactForm.php:101
+msgid "Send Message"
+msgstr "Trimite mesaj"
+
+#: includes/Builder/Woo/i18n/countries.php:198
+#, fuzzy
+msgid "Senegal"
+msgstr "Senegal"
+
+#: includes/Builder/Woo/i18n/countries.php:199
+#, fuzzy
+msgid "Serbia"
+msgstr "Serbia"
+
+#: includes/Builder/Woo/i18n/countries.php:200
+#, fuzzy
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: includes/Builder/Woo/i18n/countries.php:201
+#, fuzzy
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: includes/Builder/Woo/i18n/countries.php:202
+#, fuzzy
+msgid "Singapore"
+msgstr "Singapore"
+
+#: includes/Admin/AdminTranslations.php:45
+#, fuzzy
+msgid "Site setup"
+msgstr "Configurarea site-ului"
+
+#: includes/Builder/Woo/i18n/countries.php:203
+#, fuzzy
+msgid "Slovakia"
+msgstr "Slovacia"
+
+#: includes/Builder/Woo/i18n/countries.php:204
+#, fuzzy
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: includes/Builder/NavigationBuilder.php:352
+msgid "Socials"
+msgstr "Social media"
+
+#: includes/Builder/Woo/i18n/countries.php:205
+#, fuzzy
+msgid "Solomon Islands"
+msgstr "Insulele Solomon"
+
+#: includes/Builder/Woo/i18n/countries.php:206
+#, fuzzy
+msgid "Somalia"
+msgstr "Somalia"
+
+#: includes/Rest/BuilderRoutes.php:67
+msgid "Sorry, something wrong with data."
+msgstr "Ne pare rău, ceva nu e în regulă cu datele."
+
+#: includes/Builder/Woo/i18n/countries.php:207
+#, fuzzy
+msgid "South Africa"
+msgstr "Africa de Sud"
+
+#: includes/Builder/Woo/i18n/countries.php:208
+#, fuzzy
+msgid "South Georgia/Sandwich Islands"
+msgstr "Georgia de Sud/ Insulele Sandwich"
+
+#: includes/Builder/Woo/i18n/countries.php:209
+#, fuzzy
+msgid "South Korea"
+msgstr "Coreea de Sud"
+
+#: includes/Builder/Woo/i18n/countries.php:210
+#, fuzzy
+msgid "South Sudan"
+msgstr "Sudanul de Sud"
+
+#: includes/Builder/Woo/i18n/countries.php:211
+#, fuzzy
+msgid "Spain"
+msgstr "Spania"
+
+#: includes/Builder/Woo/i18n/countries.php:212
+#, fuzzy
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: includes/Shortcodes/ContactForm.php:171
+msgid "Successfully submitted!"
+msgstr "Trimis cu succes!"
+
+#: includes/Builder/Woo/i18n/countries.php:213
+#, fuzzy
+msgid "Sudan"
+msgstr "Sudan"
+
+#: includes/Builder/Woo/i18n/countries.php:214
+#, fuzzy
+msgid "Suriname"
+msgstr "Suriname"
+
+#: includes/Builder/Woo/i18n/countries.php:215
+#, fuzzy
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard și Jan Mayen"
+
+#: includes/Builder/Woo/i18n/countries.php:217
+#, fuzzy
+msgid "Sweden"
+msgstr "Suedia"
+
+#: includes/Builder/Woo/i18n/countries.php:218
+#, fuzzy
+msgid "Switzerland"
+msgstr "Elveția"
+
+#: includes/Builder/Woo/i18n/countries.php:219
+#, fuzzy
+msgid "Syria"
+msgstr "Siria"
+
+#: includes/Builder/Woo/i18n/countries.php:220
+#, fuzzy
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: includes/Builder/Woo/i18n/countries.php:221
+#, fuzzy
+msgid "Tajikistan"
+msgstr "Tadjikistan"
+
+#: includes/Builder/Woo/i18n/countries.php:222
+#, fuzzy
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: includes/Admin/AdminTranslations.php:12
+msgid "Tell us about your site"
+msgstr "Povestește-ne despre site-ul tău"
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Subsol"
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Antet"
+
+#: includes/Builder/Woo/i18n/countries.php:223
+#, fuzzy
+msgid "Thailand"
+msgstr "Thailanda"
+
+#: functions.php:40
+#, php-format
+msgid ""
+"The Hostinger Easy Onboarding plugin requires minimum PHP version of <b>"
+"%s</b>. "
+msgstr ""
+"Pluginul Hostinger Easy Onboarding necesită o versiune PHP minimă de <b>"
+"%s</b>."
+
+#: includes/Settings/Theme.php:29 includes/Settings/Theme.php:30
+#: includes/Settings/Theme.php:122
+msgid "Theme Settings"
+msgstr "Setări temă"
+
+#: includes/Admin/AdminTranslations.php:42
+msgid "This field is required"
+msgstr "Acest câmp este obligatoriu"
+
+#: includes/Admin/AdminTranslations.php:44
+msgid "This field should not be longer than 1024 symbols."
+msgstr "Acest câmp nu trebuie să depășească 1024 de simboluri."
+
+#: includes/Admin/AdminTranslations.php:43
+msgid "This field should not be longer than 255 symbols."
+msgstr "Acest câmp nu trebuie să depășească 255 de simboluri."
+
+#: includes/Builder/Woo/i18n/countries.php:224
+#, fuzzy
+msgid "Timor-Leste"
+msgstr "Timorul de Est"
+
+#: includes/Builder/Woo/i18n/countries.php:225
+#, fuzzy
+msgid "Togo"
+msgstr "Togo"
+
+#: includes/Builder/Woo/i18n/countries.php:226
+#, fuzzy
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: includes/Builder/Woo/i18n/countries.php:227
+#, fuzzy
+msgid "Tonga"
+msgstr "Tonga"
+
+#: includes/Builder/Woo/i18n/countries.php:228
+#, fuzzy
+msgid "Trinidad and Tobago"
+msgstr "Trinidad și Tobago"
+
+#: includes/Builder/Woo/i18n/countries.php:229
+#, fuzzy
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: includes/Builder/Woo/i18n/countries.php:230
+#, fuzzy
+msgid "Turkey"
+msgstr "Turcia"
+
+#: includes/Builder/Woo/i18n/countries.php:231
+#, fuzzy
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: includes/Builder/Woo/i18n/countries.php:232
+#, fuzzy
+msgid "Turks and Caicos Islands"
+msgstr "Insulele Turks și Caicos"
+
+#: includes/Builder/Woo/i18n/countries.php:233
+#, fuzzy
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: includes/Builder/Woo/i18n/countries.php:234
+#, fuzzy
+msgid "Uganda"
+msgstr "Uganda"
+
+#: includes/Builder/Woo/i18n/countries.php:235
+#, fuzzy
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#: includes/Builder/Woo/i18n/countries.php:236
+#, fuzzy
+msgid "United Arab Emirates"
+msgstr "Emiratele Arabe Unite"
+
+#: includes/Builder/Woo/i18n/countries.php:237
+#, fuzzy
+msgid "United Kingdom (UK)"
+msgstr "Regatul Unit (UK)"
+
+#: includes/Builder/Woo/i18n/countries.php:238
+#, fuzzy
+msgid "United States (US)"
+msgstr "Statele Unite ale Americii (US)"
+
+#: includes/Builder/Woo/i18n/countries.php:239
+#, fuzzy
+msgid "United States (US) Minor Outlying Islands"
+msgstr "Statele Unite ale Americii (SUA) Insule periferice minore"
+
+#: includes/Builder/Woo/i18n/countries.php:240
+#, fuzzy
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: includes/Builder/Woo/i18n/countries.php:241
+#, fuzzy
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: includes/Builder/Woo/i18n/countries.php:242
+#, fuzzy
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: includes/Builder/Woo/i18n/countries.php:243
+#, fuzzy
+msgid "Vatican"
+msgstr "Vatican"
+
+#: includes/Builder/Woo/i18n/countries.php:244
+#, fuzzy
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: includes/Builder/Woo/i18n/countries.php:245
+#, fuzzy
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: includes/Builder/Woo/i18n/countries.php:246
+#, fuzzy
+msgid "Virgin Islands (British)"
+msgstr "Insulele Virgine (Britanice)"
+
+#: includes/Builder/Woo/i18n/countries.php:247
+#, fuzzy
+msgid "Virgin Islands (US)"
+msgstr "Insulele Virgine (US)"
+
+#: includes/Builder/Woo/i18n/countries.php:248
+#, fuzzy
+msgid "Wallis and Futuna"
+msgstr "Wallis și Futuna"
+
+#: includes/Admin/AdminTranslations.php:14
+msgid "Website type"
+msgstr "Tip site web"
+
+#: includes/Builder/Woo/i18n/countries.php:249
+#, fuzzy
+msgid "Western Sahara"
+msgstr "Sahara Occidentală"
+
+#: includes/Shortcodes/ContactForm.php:74
+msgid "What's your email?"
+msgstr "Care este adresa ta de email?"
+
+#: includes/Shortcodes/ContactForm.php:65
+msgid "What's your name?"
+msgstr "Cum te numești?"
+
+#: includes/Shortcodes/ContactForm.php:46
+msgid "which I have read. I may withdraw my consent at any time."
+msgstr "pe care am citit-o. Pot să îmi retrag acordul oricând."
+
+#: includes/Shortcodes/ContactForm.php:82
+msgid "Write your message..."
+msgstr "Scrie aici mesajul tău..."
+
+#: includes/Rest/BuilderRoutes.php:123 includes/Rest/BuilderRoutes.php:158
+#: includes/Rest/BuilderRoutes.php:211
+msgid "Wrong sequence of step execution."
+msgstr "Ordine greșită de execuție a etapelor."
+
+#: includes/Builder/Woo/i18n/countries.php:251
+#, fuzzy
+msgid "Yemen"
+msgstr "Yemen"
+
+#. %s php version
+#: functions.php:44
+#, php-format
+msgid "You are running <b>%s</b> PHP version."
+msgstr "Utilizezi versiunea PHP <b>%s</b>."
+
+#: includes/Admin/AdminTranslations.php:39
+msgid ""
+"You have already generated content. Continuing will delete all previous "
+"content. Are you sure you want to proceed?"
+msgstr ""
+"Ai generat deja conținut. Dacă alegi să continui, tot conținutul anterior va "
+"fi șters. Ești sigur că vrei să continui?"
+
+#: includes/Shortcodes/ContactForm.php:150
+msgid "You have received a new message through your website's contact form."
+msgstr "Ai primit un mesaj nou prin formularul de contact al site-ului tău."
+
+#: includes/Builder/Woo/i18n/countries.php:252
+#, fuzzy
+msgid "Zambia"
+msgstr "Zambia"
+
+#: includes/Builder/Woo/i18n/countries.php:253
+#, fuzzy
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: includes/Builder/Woo/i18n/countries.php:6
+#, fuzzy
+msgid "Åland Islands"
+msgstr "Insulele Åland"

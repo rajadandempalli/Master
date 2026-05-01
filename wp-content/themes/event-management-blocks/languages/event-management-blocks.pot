@@ -1,0 +1,762 @@
+# Copyright (C) 2025 WP Radiant
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Event Management Blocks 1.0.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/event-management-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-04T12:33:35+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: event-management-blocks\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Event Management Blocks"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.wpradiant.net/products/free-event-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Event Management Blocks is a sophisticated WordPress theme designed to cater to the needs of event organizers, planners, and agencies. This theme is perfect for managing a wide range of digital events, Event Planning, Corporate Events, Conference Management, Wedding Services, Trade Shows, Gala Events, Seminar Organization, Workshop Coordination, Fundraising Events, Exhibition Management. From event registration to guest list management and ticketing services. Whether you’re planning a small gathering, a corporate event, or a large-scale conference, this theme offers a comprehensive solution to streamline the entire process. With tools that simplify invitation design, event apps integration, and event technology management, it’s ideal for businesses and individuals aiming to modernise their event planning with cutting-edge software. One of the standout benefits of the Event Management Blocks theme is its user-friendly interface, allowing for easy customization and personalization to suit your brand. The theme’s minimal, clean design ensures that your content remains the focal point, while elegant visual elements such as banners, team sections, and Call to Action Buttons (CTA) add a sophisticated, professional touch. Additionally, the theme is retina-ready and fully responsive, ensuring your event website looks stunning on all devices, from desktops to mobile phones. Furthermore, with support for event photography, videography, and live streaming, the Event Management Blocks WordPress Theme provides everything you need to create, manage, and analyze successful events, making it an essential tool for any event professional. Demo: https://preview.wpradiant.net/event-management-blocks/"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+#: patterns/footer-default.php:91
+msgid "WP Radiant"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.wpradiant.net/"
+msgstr ""
+
+#: get-started/getstart.php:8
+msgid "https://wordpress.org/support/theme/event-management-blocks/"
+msgstr ""
+
+#: get-started/getstart.php:9
+msgid "https://wordpress.org/support/theme/event-management-blocks/reviews/#new-post"
+msgstr ""
+
+#: get-started/getstart.php:10
+msgid "https://preview.wpradiant.net/tutorial/event-management-blocks-free/"
+msgstr ""
+
+#: get-started/getstart.php:11
+#: get-started/notice.php:3
+msgid "https://www.wpradiant.net/products/event-management-wordpress-theme"
+msgstr ""
+
+#: get-started/getstart.php:12
+msgid "https://preview.wpradiant.net/event-management-blocks/"
+msgstr ""
+
+#: get-started/getstart.php:13
+msgid "https://preview.wpradiant.net/tutorial/event-management-blocks-pro/"
+msgstr ""
+
+#: get-started/getstart.php:57
+msgid "Buy Now"
+msgstr ""
+
+#: get-started/getstart.php:60
+msgid "Demo"
+msgstr ""
+
+#: get-started/getstart.php:63
+msgid "Documentation"
+msgstr ""
+
+#: get-started/getstart.php:84
+msgid "Secondary menu"
+msgstr ""
+
+#: get-started/getstart.php:85
+msgid "About"
+msgstr ""
+
+#: get-started/getstart.php:87
+msgid "Compare free Vs Pro"
+msgstr ""
+
+#: get-started/getstart.php:89
+msgid "Changelog"
+msgstr ""
+
+#: get-started/getstart.php:110
+msgid "Free Theme Directives"
+msgstr ""
+
+#: get-started/getstart.php:113
+msgid "This article will walk you through the different phases of setting up and handling your WordPress website."
+msgstr ""
+
+#: get-started/getstart.php:117
+msgid "Free Documentation"
+msgstr ""
+
+#: get-started/getstart.php:124
+msgid "Full Site Editing"
+msgstr ""
+
+#: get-started/getstart.php:127
+msgid "We have used Full Site Editing which will help you preview your changes live and fast."
+msgstr ""
+
+#: get-started/getstart.php:131
+msgid "Use Site Editor"
+msgstr ""
+
+#: get-started/getstart.php:138
+msgid "Leave us a review"
+msgstr ""
+
+#: get-started/getstart.php:140
+msgid "We would love to hear your feedback."
+msgstr ""
+
+#: get-started/getstart.php:144
+msgid "Review"
+msgstr ""
+
+#: get-started/getstart.php:152
+msgid "Help &amp; Support"
+msgstr ""
+
+#: get-started/getstart.php:155
+msgid "If you have any question/feedback regarding theme, please post in our official support forum."
+msgstr ""
+
+#: get-started/getstart.php:159
+msgid "Get Support"
+msgstr ""
+
+#: get-started/getstart.php:177
+msgid "Want to know whats been happening with the latest changes?"
+msgstr ""
+
+#: get-started/getstart.php:238
+msgid "Compare Free Vs Pro"
+msgstr ""
+
+#: get-started/getstart.php:242
+msgid "Theme Features"
+msgstr ""
+
+#: get-started/getstart.php:243
+msgid "Free Theme"
+msgstr ""
+
+#: get-started/getstart.php:244
+msgid "Pro Theme"
+msgstr ""
+
+#: get-started/getstart.php:249
+msgid "Responsive Design"
+msgstr ""
+
+#: get-started/getstart.php:254
+msgid "Painless Setup"
+msgstr ""
+
+#: get-started/getstart.php:259
+msgid "Color Options"
+msgstr ""
+
+#: get-started/getstart.php:264
+msgid "Premium site demo"
+msgstr ""
+
+#: get-started/getstart.php:269
+msgid "Multiple Block Layout"
+msgstr ""
+
+#: get-started/getstart.php:274
+msgid "Premium Patterns"
+msgstr ""
+
+#: get-started/getstart.php:279
+msgid "Multiple Fonts"
+msgstr ""
+
+#: get-started/getstart.php:284
+msgid "Slider Block"
+msgstr ""
+
+#: get-started/getstart.php:289
+msgid "Post Listing Block"
+msgstr ""
+
+#: get-started/getstart.php:294
+msgid "WooCommerce Filter Block"
+msgstr ""
+
+#: get-started/getstart.php:299
+msgid "Gallery Block"
+msgstr ""
+
+#: get-started/getstart.php:304
+msgid "Post Carousel Block"
+msgstr ""
+
+#: get-started/getstart.php:311
+msgid "Buy It Now"
+msgstr ""
+
+#: get-started/notice.php:5
+msgid "https://www.wpradiant.net/products/wordpress-theme-bundle"
+msgstr ""
+
+#: get-started/notice.php:47
+msgid "Welcome to Event Management Blocks Company"
+msgstr ""
+
+#: get-started/notice.php:48
+msgid "Enhance Your Website Development with Radiant Blocks!!"
+msgstr ""
+
+#: get-started/notice.php:51
+msgid "Effortlessly craft websites for any niche with Radiant Blocks! Experience seamless functionality and stunning responsiveness as you enhance your digital presence with Block WordPress Themes. Start building your ideal website today!"
+msgstr ""
+
+#: get-started/notice.php:53
+msgid "Getting started"
+msgstr ""
+
+#: get-started/notice.php:55
+msgid "Buy Now "
+msgstr ""
+
+#: get-started/notice.php:57
+msgid "Get Bundle"
+msgstr ""
+
+#: inc/block-pattern.php:61
+msgid "Event Management Blocks Patterns"
+msgstr ""
+
+#: inc/block-style.php:28
+msgid "Borders"
+msgstr ""
+
+#: inc/customizer.php:17
+msgid "Event Management Pro"
+msgstr ""
+
+#: inc/customizer.php:18
+msgid "Upgrade Pro"
+msgstr ""
+
+#: patterns/404-page.php
+msgctxt "Pattern title"
+msgid "404 Page"
+msgstr ""
+
+#: patterns/404-page.php:11
+msgid "404 Page"
+msgstr ""
+
+#: patterns/404-page.php:15
+msgid "404"
+msgstr ""
+
+#: patterns/404-page.php:19
+msgid "Unfortunately we can’t find that page."
+msgstr ""
+
+#: patterns/404-page.php:23
+msgid "The page you are looking for doesnt exist or has been moved. Try another url or go to the site homepage."
+msgstr ""
+
+#: patterns/banner.php
+msgctxt "Pattern title"
+msgid "Banner"
+msgstr ""
+
+#: patterns/banner.php:11
+msgid "Banner"
+msgstr ""
+
+#: patterns/banner.php:22
+msgid "Wedding Event"
+msgstr ""
+
+#: patterns/banner.php:26
+msgid "The Honor Of Your Presence Is Requested."
+msgstr ""
+
+#: patterns/banner.php:30
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/banner.php:35
+#: patterns/services-section.php:63
+#: patterns/services-section.php:99
+#: patterns/services-section.php:135
+#: patterns/services-section.php:173
+#: patterns/services-section.php:209
+#: patterns/services-section.php:245
+msgid "Explore More"
+msgstr ""
+
+#: patterns/banner.php:57
+msgid "Virtual Event"
+msgstr ""
+
+#: patterns/banner.php:61
+#: patterns/banner.php:81
+msgid "Lorem ipsum dolor sit amet, consectetur"
+msgstr ""
+
+#: patterns/banner.php:77
+msgid "Conference"
+msgstr ""
+
+#: patterns/banner.php:92
+msgid "Follow Us"
+msgstr ""
+
+#: patterns/footer-default.php
+msgctxt "Pattern title"
+msgid "Footer Default"
+msgstr ""
+
+#: patterns/footer-default.php:11
+msgid "Footer Default"
+msgstr ""
+
+#: patterns/footer-default.php:17
+msgid "About Us"
+msgstr ""
+
+#: patterns/footer-default.php:21
+#: patterns/services-section.php:28
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+msgstr ""
+
+#: patterns/footer-default.php:37
+msgid "Events"
+msgstr ""
+
+#: patterns/footer-default.php:53
+msgid "Helps"
+msgstr ""
+
+#: patterns/footer-default.php:69
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer-default.php:73
+msgid "support@example.com"
+msgstr ""
+
+#: patterns/footer-default.php:77
+msgid "+123 456 7890"
+msgstr ""
+
+#: patterns/footer-default.php:81
+msgid "123, Red Hills, Chicago,IL, USA"
+msgstr ""
+
+#: patterns/footer-default.php:91
+msgid "Event WordPress Theme "
+msgstr ""
+
+#: patterns/footer-default.php:91
+msgid " By "
+msgstr ""
+
+#: patterns/footer-default.php:91
+msgid "Proudly powered by"
+msgstr ""
+
+#: patterns/footer-default.php:91
+msgid "WordPress"
+msgstr ""
+
+#: patterns/primary-sidebar.php
+msgctxt "Pattern title"
+msgid "Primary Sidebar"
+msgstr ""
+
+#: patterns/primary-sidebar.php:11
+msgid "Sidebar Section"
+msgstr ""
+
+#: patterns/primary-sidebar.php:17
+msgid "Search"
+msgstr ""
+
+#: patterns/primary-sidebar.php:29
+msgid "Latest Posts"
+msgstr ""
+
+#: patterns/primary-sidebar.php:55
+msgid "Archieve"
+msgstr ""
+
+#: patterns/primary-sidebar.php:67
+msgid "Category"
+msgstr ""
+
+#: patterns/primary-sidebar.php:79
+msgid "Social"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search Page"
+msgstr ""
+
+#: patterns/search.php:11
+msgid "Search Page"
+msgstr ""
+
+#: patterns/services-section.php
+msgctxt "Pattern title"
+msgid "Services Section"
+msgstr ""
+
+#: patterns/services-section.php:11
+msgid "Services Section"
+msgstr ""
+
+#: patterns/services-section.php:20
+msgid "Services"
+msgstr ""
+
+#: patterns/services-section.php:24
+msgid "Events Management Services"
+msgstr ""
+
+#: patterns/services-section.php:38
+msgid "01"
+msgstr ""
+
+#: patterns/services-section.php:54
+msgid "Night Party Service"
+msgstr ""
+
+#: patterns/services-section.php:58
+#: patterns/services-section.php:94
+#: patterns/services-section.php:130
+#: patterns/services-section.php:168
+#: patterns/services-section.php:204
+#: patterns/services-section.php:240
+msgid "Lorem Ipsum is simply dummy text of the print and typesetting industry It is a the long-established fact that a reader"
+msgstr ""
+
+#: patterns/services-section.php:74
+msgid "02"
+msgstr ""
+
+#: patterns/services-section.php:90
+msgid "Wedding Party Service"
+msgstr ""
+
+#: patterns/services-section.php:110
+msgid "03"
+msgstr ""
+
+#: patterns/services-section.php:126
+msgid "Birthday Party Service"
+msgstr ""
+
+#: patterns/services-section.php:148
+msgid "04"
+msgstr ""
+
+#: patterns/services-section.php:164
+msgid "Baby Shower Service"
+msgstr ""
+
+#: patterns/services-section.php:184
+msgid "05"
+msgstr ""
+
+#: patterns/services-section.php:200
+msgid "Kitty Party"
+msgstr ""
+
+#: patterns/services-section.php:220
+msgid "06"
+msgstr ""
+
+#: patterns/services-section.php:236
+msgid "Festival Party"
+msgstr ""
+
+#: styles/blue.json
+msgctxt "Style variation name"
+msgid "Lite Green"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Fourground"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secbackground"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "primary"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/blue.json
+#: styles/green.json
+#: styles/purple.json
+#: styles/red.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "tertiary"
+msgstr ""
+
+#: styles/green.json
+msgctxt "Style variation name"
+msgid "Red"
+msgstr ""
+
+#: styles/purple.json
+msgctxt "Style variation name"
+msgid "Purple"
+msgstr ""
+
+#: styles/red.json
+msgctxt "Style variation name"
+msgid "Lite Pink"
+msgstr ""
+
+#: styles/yellow.json
+msgctxt "Style variation name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar Products"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Grid Layout(Archieve posts)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single post (No Sidebar)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single post (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and background"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "primary and tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and background"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical secondary to tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical secondary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical tertiary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal primary to primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal secondary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal background to secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal tertiary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal background to tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Poppins"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Tiny"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Upper Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Content Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large (Recent Post Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge (Display)"
+msgstr ""

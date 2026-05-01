@@ -1,0 +1,1621 @@
+# Copyright (C) 2024 Hostinger
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger AI theme 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/hostinger-ai-"
+"theme\n"
+"Last-Translator: \n"
+"Language-Team: Hindi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-17T07:01:03+00:00\n"
+"PO-Revision-Date: 2025-06-03 12:03+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: hostinger-ai-theme\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2"
+
+#: includes/Admin/AdminTranslations.php:10
+msgid ""
+"<span style=\"display: flex; flex-direction: column; gap: 8px;\"><h3 "
+"style=\"margin:0; font-size:16px\">Site couldn’t be created</h3> <p "
+"style=\"margin-top:0; font-size:14px; color:#727586\">That’s because of an "
+"issue on our end. Try creating your site again. </p></span>"
+msgstr ""
+"<span style=\"display: flex; flex-direction: column; gap: 8px;\"><h3 "
+"style=\"margin:0; font-size:16px\">साइट नहीं बनाई जा सकी।</h3> <p "
+"style=\"margin-top:0; font-size:14px; color:#727586\">ऐसा इसलिए क्योंकि "
+"हमारी तरफ कोई समस्या पेश आई है। अपनी साइट दोबारा बनाने का प्रयास करें।</p>"
+"</span>"
+
+#: includes/Settings/Theme.php:94
+msgid "Adjust how elements are displayed on your website:"
+msgstr "अपनी वेबसाइट पर एलिमेंट्स की दिखावट एडजस्ट करें:"
+
+#: includes/Admin/AdminTranslations.php:18
+msgid "Affiliate marketing site"
+msgstr "एफिलिएट मार्केटिंग साइट"
+
+#: includes/Builder/Woo/i18n/countries.php:5
+msgid "Afghanistan"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:11 includes/Admin/Menu.php:21
+#: includes/Admin/Menu.php:22
+msgid "AI Website Creation"
+msgstr "AI वेबसाइट क्रिएशन"
+
+#: includes/Builder/Woo/i18n/countries.php:7
+msgid "Albania"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:8
+msgid "Algeria"
+msgstr ""
+
+#: includes/Builder/NavigationBuilder.php:205
+msgid "All rights reserved."
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:9
+msgid "American Samoa"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:26
+msgid "An error occurred. Please try again later."
+msgstr "कोई त्रुटि पेश आई है। कृपया थोड़ी देर बाद दोबारा प्रयास करें।"
+
+#: includes/Builder/Woo/i18n/countries.php:10
+msgid "Andorra"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:11
+msgid "Angola"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:12
+msgid "Anguilla"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:13
+msgid "Antarctica"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:14
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:15
+msgid "Argentina"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:16
+msgid "Armenia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:17
+msgid "Aruba"
+msgstr ""
+
+#. %s php version
+#: functions.php:40
+msgid "Attention:"
+msgstr "कृपया ध्यान दें:"
+
+#: includes/Builder/Woo/i18n/countries.php:18
+msgid "Australia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:19
+msgid "Austria"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:20
+msgid "Azerbaijan"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:27
+msgid "Back"
+msgstr "पीछे जाएं"
+
+#: includes/Builder/Woo/i18n/countries.php:21
+msgid "Bahamas"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:22
+msgid "Bahrain"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:23
+msgid "Bangladesh"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:24
+msgid "Barbados"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:25
+msgid "Belarus"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:27
+msgid "Belau"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:26
+msgid "Belgium"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:28
+msgid "Belize"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:29
+msgid "Benin"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:30
+msgid "Bermuda"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:31
+msgid "Bhutan"
+msgstr ""
+
+#: gutenberg-blocks/Booking/block.json:1
+msgctxt "block description"
+msgid "A block with booking form integration"
+msgstr ""
+
+#: gutenberg-blocks/Booking/block.json:1
+msgctxt "block title"
+msgid "Booking Block"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:20
+msgid "Blog"
+msgstr "ब्लॉग"
+
+#: includes/Builder/Woo/i18n/countries.php:32
+msgid "Bolivia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:33
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:22
+msgid "Booking"
+msgstr ""
+
+#: gutenberg-blocks/Booking/Booking.php:76
+msgid "Bookings"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:34
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:35
+msgid "Botswana"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:36
+msgid "Bouvet Island"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:13
+msgid "Brand name"
+msgstr "ब्रांड का नाम"
+
+#: includes/Builder/Woo/i18n/countries.php:37
+msgid "Brazil"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:38
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:39
+msgid "Brunei"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:31
+msgid "Building content"
+msgstr "कॉन्टेंट बनाया जा रहा है"
+
+#: includes/Builder/Woo/i18n/countries.php:40
+msgid "Bulgaria"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:41
+msgid "Burkina Faso"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:42
+msgid "Burundi"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:17
+msgid "Business and services"
+msgstr "बिज़नेस और सेवाएं"
+
+#: includes/Builder/Woo/i18n/countries.php:43
+msgid "Cambodia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:44
+msgid "Cameroon"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:45
+msgid "Canada"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:40
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: includes/Builder/Woo/i18n/countries.php:46
+msgid "Cape Verde"
+msgstr ""
+
+#: includes/Builder/WebsiteBuilder.php:369
+msgid "Cart"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:47
+msgid "Cayman Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:48
+msgid "Central African Republic"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:49
+msgid "Chad"
+msgstr ""
+
+#: includes/Settings/Theme.php:110
+msgid "Check this box to hide the header element on all pages"
+msgstr "सभी पेजेस पर हैडर एलिमेंट छिपाने के लिए इस बॉक्स को चेक करें"
+
+#: includes/Builder/WebsiteBuilder.php:378
+msgid "Checkout"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:50
+msgid "Chile"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:51
+msgid "China"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:52
+msgid "Christmas Island"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:53
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:54
+msgid "Colombia"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 1 (Section backgrounds)"
+msgstr "रंग 1 (सेक्शन के बैकग्राउंड)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 2 (Section backgrounds)"
+msgstr "रंग 2 (सेक्शन के बैकग्राउंड)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Color 3 (Button background)"
+msgstr "रंग 3 (बटन का बैकग्राउंड)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Dark (Text on Light and Color 1)"
+msgstr "डार्क (टेक्स्ट लाइट और रंग 1 पर है)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Grey (Form borders)"
+msgstr "ग्रे (फॉर्म का बॉर्डर)"
+
+#: theme.json:1
+msgctxt "Color name"
+msgid "Light (Text on Color 2 and Gradient)"
+msgstr "लाइट (टेक्स्ट ग्रेडिएंट और रंग 2 पर है)"
+
+#: includes/Builder/Woo/i18n/countries.php:55
+msgid "Comoros"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:56
+msgid "Congo (Brazzaville)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:57
+msgid "Congo (Kinshasa)"
+msgstr ""
+
+#: includes/Builder/NavigationBuilder.php:351
+msgid "Contacts"
+msgstr "कॉन्टैक्ट्स"
+
+#: includes/Admin/AdminTranslations.php:41
+msgid "Continue"
+msgstr "आगे बढ़ें"
+
+#: includes/Builder/Woo/i18n/countries.php:58
+msgid "Cook Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:59
+msgid "Costa Rica"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:25
+msgid "Country"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:26
+msgid "Create"
+msgstr "बनाएं"
+
+#: includes/Admin/AdminTranslations.php:32
+msgid "Create again"
+msgstr "दोबारा बनाएं"
+
+#: includes/Builder/Woo/i18n/countries.php:60
+msgid "Croatia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:61
+msgid "Cuba"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:62
+msgid "Cura&ccedil;ao"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "No title"
+msgstr "कोई टाइटल नहीं है"
+
+#: includes/Builder/Woo/i18n/countries.php:63
+msgid "Cyprus"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:64
+msgid "Czech Republic"
+msgstr ""
+
+#: gutenberg-blocks/Booking/Booking.php:85
+msgid "Date"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:65
+msgid "Denmark"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:23
+msgid "Describe your site"
+msgstr "अपनी साइट का वर्णन करें"
+
+#: includes/Admin/AdminTranslations.php:24
+msgid "Description"
+msgstr "विवरण"
+
+#: includes/Shortcodes/ContactForm.php:151
+msgid "Details:"
+msgstr "जानकारी:"
+
+#: includes/Settings/Theme.php:53
+msgid "Display Settings"
+msgstr "डिस्प्ले सेटिंग्स"
+
+#: includes/Builder/Woo/i18n/countries.php:66
+msgid "Djibouti"
+msgstr ""
+
+#: includes/Admin/Surveys.php:35
+msgid "Do you have any comments/suggestions to improve our AI tools?"
+msgstr "क्या हमारे AI टूल को बेहतर बनाने के लिए आपके कोई सुझाव या कमेंट हैं?"
+
+#: includes/Builder/Woo/i18n/countries.php:67
+msgid "Dominica"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:68
+msgid "Dominican Republic"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:69
+msgid "Ecuador"
+msgstr ""
+
+#: includes/Hooks.php:95 includes/Admin/AdminTranslations.php:33
+msgid "Edit site"
+msgstr "साइट एडिट करें"
+
+#: includes/Builder/Woo/i18n/countries.php:70
+msgid "Egypt"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:71
+msgid "El Salvador"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:69
+msgid "Email"
+msgstr "ईमेल"
+
+#: includes/Shortcodes/ContactForm.php:153
+msgid "Email:"
+msgstr "ईमेल:"
+
+#: includes/Admin/AdminTranslations.php:35
+msgid "Enter at least 11 characters"
+msgstr "कम से कम 11 अक्षर दर्ज करें"
+
+#: includes/Builder/Woo/i18n/countries.php:72
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:73
+msgid "Eritrea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:74
+msgid "Estonia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:216
+msgid "Eswatini"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:75
+msgid "Ethiopia"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:38
+msgid "Existing content will be deleted"
+msgstr "मौजूदा कॉन्टेंट डिलीट कर दिया जाएगा"
+
+#: includes/Admin/Templates/featured-image-metabox.php:7
+msgid "External image can be used to show featured image."
+msgstr "फीचर्ड इमेज दिखाने के लिए बाहरी इमेज का उपयोग किया जा सकता है।"
+
+#: includes/Admin/Templates/featured-image-metabox.php:12
+msgid "External Image URL"
+msgstr "बाहरी इमेज का URL"
+
+#: includes/Shortcodes/ContactForm.php:173
+msgid "Failed to send email. Please try again later."
+msgstr "ईमेल भेजना विफल रहा। कृपया थोड़ी देर बाद दोबारा प्रयास करें।"
+
+#: includes/Builder/Woo/i18n/countries.php:76
+msgid "Falkland Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:77
+msgid "Faroe Islands"
+msgstr ""
+
+#: includes/Admin/Hooks.php:36
+msgid "Featured Image with URL"
+msgstr "फीचर्ड इमेज URL के साथ"
+
+#: includes/Builder/Woo/i18n/countries.php:78
+msgid "Fiji"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:79
+msgid "Finland"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Caudex"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Cormorant"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "DM Serif Display"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Fira Sans"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Gruppo"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Junge"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr "मोनोस्पेस"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Montserrat"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Nunito Sans"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Poppins"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Prompt"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Prosto One"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Serif"
+msgstr "सेरिफ"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "System"
+msgstr "सिस्टम"
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Titillium Web"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Trirong"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Large"
+msgstr "बड़ा"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "मध्यम"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Small"
+msgstr "छोटा"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XL"
+msgstr "XL"
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "XXL"
+msgstr "XXL"
+
+#: includes/Builder/Woo/i18n/countries.php:80
+msgid "France"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:81
+msgid "French Guiana"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:82
+msgid "French Polynesia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:83
+msgid "French Southern Territories"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:84
+msgid "Gabon"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:85
+msgid "Gambia"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:28
+msgid "Generating colors"
+msgstr "रंग जनरेट किए जा रहे हैं"
+
+#: includes/Admin/AdminTranslations.php:30
+msgid "Generating content"
+msgstr "कॉन्टेंट जनरेट किया जा रहा है"
+
+#: includes/Admin/AdminTranslations.php:29
+msgid "Generating structure"
+msgstr "संरचना जनरेट की जा रही है"
+
+#: includes/Builder/Woo/i18n/countries.php:86
+msgid "Georgia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:87
+msgid "Germany"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:88
+msgid "Ghana"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:89
+msgid "Gibraltar"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:34
+msgid "Give us a minute"
+msgstr "बस हमें एक मिनट का समय दें"
+
+#: theme.json:1
+msgctxt "Gradient name"
+msgid "Section background gradient"
+msgstr "सेक्शन का बैकग्राउंड ग्रेडिएंट"
+
+#: includes/Admin/AdminTranslations.php:37
+msgid "Great description! Feel free to add more details"
+msgstr "बेहतरीन विवरण! आप चाहें तो अधिक जानकारी दर्ज कर सकते हैं"
+
+#: includes/Builder/Woo/i18n/countries.php:90
+msgid "Greece"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:91
+msgid "Greenland"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:92
+msgid "Grenada"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:93
+msgid "Guadeloupe"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:94
+msgid "Guam"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:95
+msgid "Guatemala"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:96
+msgid "Guernsey"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:97
+msgid "Guinea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:98
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:99
+msgid "Guyana"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:100
+msgid "Haiti"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:101
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:149
+msgid "Hello,"
+msgstr "हैलो,"
+
+#: includes/Settings/Theme.php:60
+msgid "Hide Header"
+msgstr "हैडर छिपाएं"
+
+#: includes/Builder/Woo/i18n/countries.php:102
+msgid "Honduras"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:103
+msgid "Hong Kong"
+msgstr ""
+
+#. Author of the theme
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#. Name of the theme
+msgid "Hostinger AI theme"
+msgstr "Hostinger AI थीम"
+
+#. Description of the theme
+msgid ""
+"Hostinger AI theme built with SEO and mobile responsiveness in mind, this "
+"theme ensures optimal performance and a better online presence."
+msgstr ""
+"Hostinger AI थीम SEO और मोबाइल रिस्पॉन्सिवनेस को ध्यान में रखकर बनाई गई है, "
+"ताकि आपको बेहतर परफॉर्मेंस और ऑनलाइन उपस्थिति के लाभ मिलें।"
+
+#: includes/Admin/Surveys.php:31
+msgid ""
+"How would you rate your experience using our AI website builder to create "
+"your site? (Scale 1-10)"
+msgstr ""
+"अपनी साइट बनाने के लिए हमारे AI वेबसाइट बिल्डर का उपयोग करने का आपका अनुभव "
+"कैसा रहा? (1-10 के स्केल पर रेट करें)"
+
+#. Author URI of the theme
+msgid "https://hostinger.com"
+msgstr "https://hostinger.in"
+
+#: includes/Builder/Woo/i18n/countries.php:104
+msgid "Hungary"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:42
+msgid ""
+"I consent to use of provided personal data for the purpose of responding to "
+"the request as described in"
+msgstr ""
+"मैं अनुरोध का जवाब देने के उद्देश्य से प्रदान किए गए व्यक्तिगत डेटा का उपयोग "
+"करने के लिए सहमति देता/देती हूं"
+
+#: includes/Builder/Woo/i18n/countries.php:105
+msgid "Iceland"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:106
+msgid "India"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:107
+msgid "Indonesia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:108
+msgid "Iran"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:109
+msgid "Iraq"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:110
+msgid "Ireland"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:111
+msgid "Isle of Man"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:112
+msgid "Israel"
+msgstr ""
+
+#: patterns/hidden-404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"ऐसा लगता है कि इस जगह पर कुछ भी नहीं मिला। सर्च का उपयोग कर प्रयास करें।"
+
+#: includes/Builder/Woo/i18n/countries.php:113
+msgid "Italy"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:114
+msgid "Ivory Coast"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:115
+msgid "Jamaica"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:116
+msgid "Japan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:117
+msgid "Jersey"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:118
+msgid "Jordan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:119
+msgid "Kazakhstan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:120
+msgid "Kenya"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:121
+msgid "Kiribati"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:122
+msgid "Kuwait"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:123
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:21
+msgid "Landing"
+msgstr "लैंडिंग"
+
+#: includes/Builder/Woo/i18n/countries.php:124
+msgid "Laos"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:125
+msgid "Latvia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:126
+msgid "Lebanon"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:127
+msgid "Lesotho"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:36
+msgid "Let us know more about your website to get the best result"
+msgstr "बेहतरीन परिणाम पाने के लिए हमें अपनी वेबसाइट के बारे में और कुछ बताएं"
+
+#: includes/Builder/Woo/i18n/countries.php:128
+msgid "Liberia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:129
+msgid "Libya"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:130
+msgid "Liechtenstein"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:131
+msgid "Lithuania"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:132
+msgid "Luxembourg"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:133
+msgid "Macao"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:135
+msgid "Madagascar"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:136
+msgid "Malawi"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:137
+msgid "Malaysia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:138
+msgid "Maldives"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:139
+msgid "Mali"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:140
+msgid "Malta"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:141
+msgid "Marshall Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:142
+msgid "Martinique"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:143
+msgid "Mauritania"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:144
+msgid "Mauritius"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:145
+msgid "Mayotte"
+msgstr ""
+
+#: includes/Builder/NavigationBuilder.php:350
+msgid "Menu"
+msgstr "मेन्यू"
+
+#: includes/Shortcodes/ContactForm.php:78
+msgid "Message"
+msgstr "संदेश"
+
+#: includes/Shortcodes/ContactForm.php:154
+msgid "Message:"
+msgstr "संदेश:"
+
+#: includes/Builder/Woo/i18n/countries.php:146
+msgid "Mexico"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:147
+msgid "Micronesia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:148
+msgid "Moldova"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:149
+msgid "Monaco"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:150
+msgid "Mongolia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:151
+msgid "Montenegro"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:152
+msgid "Montserrat"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:153
+msgid "Morocco"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:154
+msgid "Mozambique"
+msgstr ""
+
+#: includes/Builder/WebsiteBuilder.php:387
+msgid "My Account"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:155
+msgid "Myanmar"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:60
+msgid "Name"
+msgstr "नाम"
+
+#: includes/Shortcodes/ContactForm.php:152
+msgid "Name:"
+msgstr "नाम:"
+
+#: includes/Builder/Woo/i18n/countries.php:156
+msgid "Namibia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:157
+msgid "Nauru"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:158
+msgid "Nepal"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:159
+msgid "Netherlands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:160
+msgid "New Caledonia"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:132
+msgid "New Contact Form Submission"
+msgstr "नए कॉन्टैक्ट फॉर्म का सबमिशन"
+
+#: includes/Builder/Woo/i18n/countries.php:161
+msgid "New Zealand"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:162
+msgid "Nicaragua"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:163
+msgid "Niger"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:164
+msgid "Nigeria"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:165
+msgid "Niue"
+msgstr ""
+
+#: gutenberg-blocks/Booking/Booking.php:79
+msgid "No bookings yet."
+msgstr ""
+
+#: patterns/query.php:24
+msgid "No results found."
+msgstr "कोई परिणाम नहीं मिले"
+
+#: includes/Builder/Woo/i18n/countries.php:166
+msgid "Norfolk Island"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:168
+msgid "North Korea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:134
+msgid "North Macedonia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:167
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:169
+msgid "Norway"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:176
+msgid "Not valid recipient email."
+msgstr "प्राप्तकर्ता का ईमेल वैध नहीं है।"
+
+#: includes/Builder/Woo/i18n/countries.php:170
+msgid "Oman"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:19
+msgid "Online store"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:15
+msgid "Other"
+msgstr "अन्य"
+
+#: patterns/hidden-404.php:13
+msgid "Page not found"
+msgstr "पेज नहीं मिला"
+
+#: includes/Builder/Woo/i18n/countries.php:171
+msgid "Pakistan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:172
+msgid "Palestinian Territory"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:173
+msgid "Panama"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:174
+msgid "Papua New Guinea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:175
+msgid "Paraguay"
+msgstr ""
+
+#: patterns/hidden-404.php:2
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/hidden-post-meta.php:2
+msgctxt "Pattern title"
+msgid "Hidden post meta"
+msgstr "पोस्ट का छिपा हुआ मेटा"
+
+#: patterns/query.php:2
+msgctxt "Pattern title"
+msgid "Query"
+msgstr "क्वेरी"
+
+#: includes/Builder/Woo/i18n/countries.php:176
+msgid "Peru"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:177
+msgid "Philippines"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:178
+msgid "Pitcairn"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:123
+msgid "Please agree with privacy policy."
+msgstr "कृपया गोपनीयता नीति स्वीकारें।"
+
+#: includes/Shortcodes/ContactForm.php:128
+msgid "Please enter a valid email address."
+msgstr "कृपया वैध ईमेल एड्रेस दर्ज करें"
+
+#: includes/Builder/Woo/i18n/countries.php:179
+msgid "Poland"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:16
+msgid "Portfolio"
+msgstr "पोर्टफोलियो"
+
+#: includes/Builder/Woo/i18n/countries.php:180
+msgid "Portugal"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:44
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+#: includes/Rest/BuilderRoutes.php:227
+msgid "Problem building content."
+msgstr "कॉन्टेंट बनाने में समस्या पेश आ रही है"
+
+#: includes/Rest/BuilderRoutes.php:183
+msgid "Problem generating content."
+msgstr "कॉन्टेंट जनरेट करने में समस्या पेश आ रही है"
+
+#: includes/Builder/Woo/i18n/countries.php:181
+msgid "Puerto Rico"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:182
+msgid "Qatar"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:183
+msgid "Reunion"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:184
+msgid "Romania"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:185
+msgid "Russia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:186
+msgid "Rwanda"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:196
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:187
+msgid "Saint Barth&eacute;lemy"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:188
+msgid "Saint Helena"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:189
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:190
+msgid "Saint Lucia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:192
+msgid "Saint Martin (Dutch part)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:191
+msgid "Saint Martin (French part)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:193
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:194
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:250
+msgid "Samoa"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:195
+msgid "San Marino"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:197
+msgid "Saudi Arabia"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:101
+msgid "Send Message"
+msgstr "संदेश भेजें"
+
+#: includes/Builder/Woo/i18n/countries.php:198
+msgid "Senegal"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:199
+msgid "Serbia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:200
+msgid "Seychelles"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:201
+msgid "Sierra Leone"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:202
+msgid "Singapore"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:45
+msgid "Site setup"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:203
+msgid "Slovakia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:204
+msgid "Slovenia"
+msgstr ""
+
+#: includes/Builder/NavigationBuilder.php:352
+msgid "Socials"
+msgstr "सोशल्स"
+
+#: includes/Builder/Woo/i18n/countries.php:205
+msgid "Solomon Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:206
+msgid "Somalia"
+msgstr ""
+
+#: includes/Rest/BuilderRoutes.php:67
+msgid "Sorry, something wrong with data."
+msgstr "क्षमा करें, डेटा के साथ कोई गड़बड़ी है"
+
+#: includes/Builder/Woo/i18n/countries.php:207
+msgid "South Africa"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:208
+msgid "South Georgia/Sandwich Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:209
+msgid "South Korea"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:210
+msgid "South Sudan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:211
+msgid "Spain"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:212
+msgid "Sri Lanka"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:171
+msgid "Successfully submitted!"
+msgstr "सफलतापूर्वक सबमिट किया जा चुका है!"
+
+#: includes/Builder/Woo/i18n/countries.php:213
+msgid "Sudan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:214
+msgid "Suriname"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:215
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:217
+msgid "Sweden"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:218
+msgid "Switzerland"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:219
+msgid "Syria"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:220
+msgid "Taiwan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:221
+msgid "Tajikistan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:222
+msgid "Tanzania"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:12
+msgid "Tell us about your site"
+msgstr "हमें अपनी साइट के बारे में बताएं"
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "फुटर"
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Header"
+msgstr "हैडर"
+
+#: includes/Builder/Woo/i18n/countries.php:223
+msgid "Thailand"
+msgstr ""
+
+#: functions.php:40
+#, php-format
+msgid ""
+"The Hostinger Easy Onboarding plugin requires minimum PHP version of <b>"
+"%s</b>. "
+msgstr ""
+"Hostinger Easy Onboarding प्लगइन का उपयोग करने के लिए कम से कम PHP संस्करण "
+"<b>%s</b> का होना ज़रूरी है।"
+
+#: includes/Settings/Theme.php:29 includes/Settings/Theme.php:30
+#: includes/Settings/Theme.php:122
+msgid "Theme Settings"
+msgstr "थीम सेटिंग्स"
+
+#: includes/Admin/AdminTranslations.php:42
+msgid "This field is required"
+msgstr "यह फील्ड अनिवार्य है"
+
+#: includes/Admin/AdminTranslations.php:44
+msgid "This field should not be longer than 1024 symbols."
+msgstr "यह फील्ड 1024 सिम्बल्स से अधिक लंबी नहीं होनी चाहिए।"
+
+#: includes/Admin/AdminTranslations.php:43
+msgid "This field should not be longer than 255 symbols."
+msgstr "यह फील्ड 255 सिम्बल्स से अधिक लंबी नहीं होनी चाहिए।"
+
+#: includes/Builder/Woo/i18n/countries.php:224
+msgid "Timor-Leste"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:225
+msgid "Togo"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:226
+msgid "Tokelau"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:227
+msgid "Tonga"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:228
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:229
+msgid "Tunisia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:230
+msgid "Turkey"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:231
+msgid "Turkmenistan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:232
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:233
+msgid "Tuvalu"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:234
+msgid "Uganda"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:235
+msgid "Ukraine"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:236
+msgid "United Arab Emirates"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:237
+msgid "United Kingdom (UK)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:238
+msgid "United States (US)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:239
+msgid "United States (US) Minor Outlying Islands"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:240
+msgid "Uruguay"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:241
+msgid "Uzbekistan"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:242
+msgid "Vanuatu"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:243
+msgid "Vatican"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:244
+msgid "Venezuela"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:245
+msgid "Vietnam"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:246
+msgid "Virgin Islands (British)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:247
+msgid "Virgin Islands (US)"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:248
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: includes/Admin/AdminTranslations.php:14
+msgid "Website type"
+msgstr "वेबसाइट का प्रकार"
+
+#: includes/Builder/Woo/i18n/countries.php:249
+msgid "Western Sahara"
+msgstr ""
+
+#: includes/Shortcodes/ContactForm.php:74
+msgid "What's your email?"
+msgstr "आपका ईमेल एड्रेस क्या है?"
+
+#: includes/Shortcodes/ContactForm.php:65
+msgid "What's your name?"
+msgstr "आपका नाम क्या है?"
+
+#: includes/Shortcodes/ContactForm.php:46
+msgid "which I have read. I may withdraw my consent at any time."
+msgstr "जो मैंने पढ़ी है। मैं किसी भी समय अपनी स्वीकृति वापस ले सकता/सकती हूं।"
+
+#: includes/Shortcodes/ContactForm.php:82
+msgid "Write your message..."
+msgstr "अपना संदेश लिखें..."
+
+#: includes/Rest/BuilderRoutes.php:123 includes/Rest/BuilderRoutes.php:158
+#: includes/Rest/BuilderRoutes.php:211
+msgid "Wrong sequence of step execution."
+msgstr "चरण पूरे करने का क्रम गलत है"
+
+#: includes/Builder/Woo/i18n/countries.php:251
+msgid "Yemen"
+msgstr ""
+
+#. %s php version
+#: functions.php:44
+#, php-format
+msgid "You are running <b>%s</b> PHP version."
+msgstr "आप <b>%s</b> PHP संस्करण का उपयोग कर रहे हैं।"
+
+#: includes/Admin/AdminTranslations.php:39
+msgid ""
+"You have already generated content. Continuing will delete all previous "
+"content. Are you sure you want to proceed?"
+msgstr ""
+"आपने पहले ही कॉन्टेंट जनरेट कर लिया है। आगे बढ़ने से पिछला सारा कॉन्टेंट "
+"डिलीट हो जाएगा। क्या आप फिर भी आगे बढ़ना चाहते हैं?"
+
+#: includes/Shortcodes/ContactForm.php:150
+msgid "You have received a new message through your website's contact form."
+msgstr ""
+"आपको अपनी वेबसाइट के कॉन्टैक्ट फॉर्म के माध्यम से एक नया संदेश प्राप्त हुआ "
+"है।"
+
+#: includes/Builder/Woo/i18n/countries.php:252
+msgid "Zambia"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:253
+msgid "Zimbabwe"
+msgstr ""
+
+#: includes/Builder/Woo/i18n/countries.php:6
+msgid "Åland Islands"
+msgstr ""
