@@ -8,6 +8,8 @@
   --text-secondary: #cbd5e1; /* Lightened from #94a3b8 for better contrast */
   --border-color: rgba(255, 255, 255, 0.12); /* Slightly more visible */
   --font-family: 'Outfit', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-nav: 'Montserrat', sans-serif;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --banner-height: 40px;
 }
@@ -159,10 +161,11 @@ a {
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary-color);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -172,8 +175,11 @@ a {
 }
 
 .nav-link {
-  font-size: 1rem;
-  font-weight: 500;
+  font-family: var(--font-nav);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--text-primary);
   transition: var(--transition);
   position: relative;
@@ -262,7 +268,8 @@ main {
 .mt-2 { margin-top: 2rem; }
 .mb-2 { margin-bottom: 2rem; }
 .section-title {
-  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, var(--text-primary), var(--primary-color));
@@ -282,11 +289,14 @@ main {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   border-radius: 30px;
+  font-family: var(--font-nav);
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: var(--transition);
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .btn-primary {
@@ -340,10 +350,12 @@ main {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--text-primary);
+  color: var(--primary-color);
+  line-height: 1.1;
 }
 
 .hero p {
@@ -575,9 +587,10 @@ footer {
 }
 
 .footer-col h3 {
+  font-family: var(--font-heading);
   color: var(--primary-color);
   margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .footer-col p, .footer-col a {
