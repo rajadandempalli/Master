@@ -166,6 +166,13 @@ a {
   font-weight: 700;
   color: var(--primary-color);
   letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.25rem;
+  }
 }
 
 .nav-links {
@@ -735,6 +742,10 @@ footer {
   
   :root {
     --banner-height: 40px;
+  }
+
+  .glass-nav {
+    padding: 1rem;
   }
 
   .ticker {
