@@ -1,0 +1,30 @@
+# Petals Paradise Events - Security Headers
+<IfModule mod_headers.c>
+    # Prevent Clickjacking
+    Header set X-Frame-Options "DENY"
+    
+    # Prevent MIME Sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Enable XSS protection for older browsers
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Enforce HTTPS (HSTS)
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # Referrer Policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Content Security Policy (CSP)
+    # Allows trusted CDNs for scripts, styles, and images used in the site
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://cdn.jsdelivr.net https://maps.googleapis.com https://cdn.emailjs.com https://api.emailjs.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' data: https://images.unsplash.com https://maps.gstatic.com https://maps.googleapis.com ./wp-content/; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.emailjs.com https://maps.googleapis.com;"
+</IfModule>
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
