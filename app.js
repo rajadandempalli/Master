@@ -639,6 +639,7 @@ function renderGallery() {
             "./wp-content/uploads/2025/05/31782321-EE45-4F6A-9482-25F39324F8B7-scaled.jpg"
         ],
         "Event Highlights": [
+            "./wp-content/uploads/2026/05/IMG_1314.jpeg",
             "./wp-content/uploads/2025/09/IMG_0012-scaled.jpg",
             "./wp-content/uploads/2025/12/IMG_0670-2-scaled.jpg",
             "./wp-content/uploads/2025/09/IMG_0048-scaled.jpg",
