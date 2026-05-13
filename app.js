@@ -628,7 +628,8 @@ function renderGallery() {
     const gallery = {
         "Graduation 2026": [
             "./wp-content/uploads/2025/07/IMG_9906-scaled.jpg",
-            "./wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg"
+            "./wp-content/uploads/2025/07/IMG_9901-1-scaled.jpg",
+            "./wp-content/uploads/2025/07/image-2-scaled.png"
         ],
         "Traditional & Seemantham": [
             "./wp-content/uploads/2025/07/Seemantham-4.jpg",
@@ -646,7 +647,6 @@ function renderGallery() {
             "./wp-content/uploads/2025/09/IMG_0079-scaled.jpg",
             "./wp-content/uploads/2025/12/IMG_0755-2-scaled.jpg",
             "./wp-content/uploads/2025/07/image-1.png",
-            "./wp-content/uploads/2025/07/image-2-scaled.png",
             "./wp-content/uploads/2025/07/image-scaled.png"
         ]
     };
