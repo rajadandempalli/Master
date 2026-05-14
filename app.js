@@ -496,10 +496,10 @@ function renderHome() {
             </div>
         </section>
 
-        <section class="container mt-2" style="background: var(--surface-color); border-radius: 12px; padding: 3rem 2rem;">
+        <section class="container" style="background: var(--surface-color); border-radius: 12px; padding: 2rem 1.5rem; margin-top: 1rem; margin-bottom: 1rem;">
             <div class="text-center" style="max-width: 800px; margin: 0 auto;">
-                <h2 class="section-title">About Petals Paradise</h2>
-                <p class="section-subtitle" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                <h2 class="section-title" style="font-size: 2rem; margin-bottom: 0.5rem;">About Petals Paradise</h2>
+                <p class="section-subtitle" style="font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 0;">
                     Welcome to Petals Paradise Events! Based in Aldie, VA, we are a family-owned event decor and premium party rental company serving Loudoun County and the entire DMV area. Our passion is transforming your vision into reality, whether it's an elegant wedding, a joyful baby shower, or a milestone graduation. We pride ourselves on providing high-quality inventory, impeccable service, and a personal touch to make your celebrations truly unforgettable.
                 </p>
             </div>
