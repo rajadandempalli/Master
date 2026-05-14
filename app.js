@@ -1553,22 +1553,30 @@ function router(preserveScroll = false) {
     // Use retry loop since flatpickr is loaded with `defer` and may not be ready yet
     const initFlatpickr = (attempts = 0) => {
         if (typeof flatpickr !== 'undefined') {
+            // Destroy any existing flatpickr instances first to avoid duplicates
+            document.querySelectorAll('input[type=date]').forEach(el => {
+                if (el._flatpickr) el._flatpickr.destroy();
+            });
             flatpickr("input[type=date]", {
-                altInput: true,
-                altFormat: "F j, Y",
                 dateFormat: "Y-m-d",
-                minDate: "today"
+                minDate: "today",
+                disableMobile: false
+            });
+            document.querySelectorAll('input[type=time]').forEach(el => {
+                if (el._flatpickr) el._flatpickr.destroy();
             });
             flatpickr("input[type=time]", {
                 enableTime: true,
                 noCalendar: true,
-                dateFormat: "h:i K"
+                dateFormat: "h:i K",
+                disableMobile: false
             });
         } else if (attempts < 20) {
             setTimeout(() => initFlatpickr(attempts + 1), 150);
         }
     };
     initFlatpickr();
+
 
 
     if (!preserveScroll) {
