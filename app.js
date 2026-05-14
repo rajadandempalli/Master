@@ -819,7 +819,7 @@ function renderContact() {
                         <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Contact Information</h3>
                         <p style="margin-bottom: 1rem;"><i data-feather="phone"></i> <a href="tel:+18484486993" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
                         <p style="margin-bottom: 1rem;"><i data-feather="mail"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none;">contact@petalsparadiseevents.com</a></p>
-                        <p style="margin-bottom: 1rem;"><i data-feather="map-pin"></i> 25025 Coats Sq, Aldie, VA, 20105</p>
+                        <p style="margin-bottom: 1rem;"><i data-feather="map-pin"></i> Serving Ashburn, Aldie & DMV Area</p>
                     </div>
                 </div>
             </div>
