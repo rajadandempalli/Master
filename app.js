@@ -470,9 +470,9 @@ function renderFooter() {
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p><i data-feather="phone" style="width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" class="phone-link">+1 848-448-6993</a></p>
-                <p><i data-feather="mail" style="width:16px; margin-right:8px;"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none;">contact@petalsparadiseevents.com</a></p>
-                <p><i data-feather="map-pin" style="width:16px; margin-right:8px;"></i> 25025 Coats Sq, Aldie, VA, 20105</p>
+                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="phone" style="width:16px; min-width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" class="phone-link" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
+                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="mail" style="width:16px; min-width:16px; margin-right:8px;"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none; word-break: break-word;">contact@petalsparadiseevents.com</a></p>
+                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="map-pin" style="width:16px; min-width:16px; margin-right:8px;"></i> Serving Ashburn, Aldie & DMV Area</p>
             </div>
         </div>
         <div class="footer-bottom">
