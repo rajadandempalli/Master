@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal | Petals Paradise Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Admin Specific Styles */
+        body { background-color: var(--bg-color); color: var(--text-primary); }
+        .admin-container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        
+        /* Login Screen */
+        #login-screen { display: flex; height: 100vh; align-items: center; justify-content: center; }
+        .login-box { background: var(--surface-color); padding: 3rem; border-radius: 12px; border: 1px solid var(--border-color); width: 100%; max-width: 400px; text-align: center; box-shadow: var(--shadow-lg); }
+        .login-box h2 { font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 1.5rem; }
+        .login-box input { width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); }
+        
+        /* Dashboard Layout */
+        #dashboard-screen { display: none; }
+        .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .stat-card { background: var(--surface-glass); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1rem; }
+        .stat-icon { background: rgba(212, 175, 55, 0.1); color: var(--primary-color); padding: 1rem; border-radius: 50%; }
+        .stat-info h3 { font-size: 2rem; margin: 0; }
+        .stat-info p { color: var(--text-secondary); margin: 0; font-size: 0.9rem; }
+
+        .dashboard-main { display: grid; grid-template-columns: 1fr 350px; gap: 2rem; }
+        @media(max-width: 900px) { .dashboard-main { grid-template-columns: 1fr; } }
+        
+        .panel { background: var(--surface-color); border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border-color); }
+        .panel h3 { margin-top: 0; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px; color: var(--primary-color); }
+        
+        /* Forms & Tables */
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); }
+        .form-group input, .form-group select { width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { color: var(--text-secondary); font-weight: 500; font-size: 0.9rem; }
+        .status-badge { padding: 4px 8px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .status-pickup { background: rgba(212, 175, 55, 0.2); color: var(--primary-color); }
+        .status-return { background: rgba(46, 204, 113, 0.2); color: #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>Admin Portal</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">Authorized personnel only.</p>
+            <form id="login-form">
+                <input type="password" id="admin-password" placeholder="Enter Access Code" required>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Secure Login</button>
+                <p id="login-error" style="color: #ff4757; font-size: 0.85rem; margin-top: 1rem; display: none;">Invalid access code.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- DASHBOARD SCREEN -->
+    <div id="dashboard-screen" class="admin-container">
+        <header class="dashboard-header">
+            <div>
+                <h1 style="font-family: var(--font-heading); color: var(--primary-color);">Rental Tracker</h1>
+                <p style="color: var(--text-secondary);">Manage pickups, returns, and inventory</p>
+            </div>
+            <button id="logout-btn" class="btn btn-outline"><i data-feather="log-out"></i> Logout</button>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i data-feather="calendar"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-pickups">0</h3>
+                    <p>Pickups This Week</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i data-feather="check-circle"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-returns">0</h3>
+                    <p>Returns Pending</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-main">
+            <!-- Active Orders Table -->
+            <div class="panel">
+                <h3><i data-feather="list"></i> Active Schedule</h3>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Item(s)</th>
+                                <th>Pickup Date</th>
+                                <th>Return Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-table-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Add New Entry Form -->
+            <div class="panel">
+                <h3><i data-feather="plus-circle"></i> Log New Order</h3>
+                <form id="new-order-form">
+                    <div class="form-group">
+                        <label>Customer Name</label>
+                        <input type="text" id="cust-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Info (Platform/Phone)</label>
+                        <input type="text" id="cust-contact" placeholder="e.g. FB Marketplace, Message">
+                    </div>
+                    <div class="form-group">
+                        <label>Rental Item(s) & Quantity</label>
+                        <input type="text" id="rental-items" placeholder="e.g. 30x Folding Chairs, 1x Haldi Urli" required>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label>Pickup Date</label>
+                            <input type="date" id="pickup-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Pickup Time</label>
+                            <input type="time" id="pickup-time">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Return Date</label>
+                        <input type="date" id="return-date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Save Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
