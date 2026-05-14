@@ -105,7 +105,7 @@ a {
 .ticker {
   display: flex;
   width: fit-content;
-  animation: ticker 60s linear infinite;
+  animation: ticker 90s linear infinite;
 }
 
 .ticker-item {
@@ -412,6 +412,10 @@ main {
   height: 280px;
   overflow: hidden;
   position: relative;
+}
+
+.card-img-wrapper:hover .quick-view-overlay {
+  opacity: 1 !important;
 }
 
 .card img {
@@ -761,7 +765,7 @@ footer {
   }
 
   .ticker {
-    animation: ticker 20s linear infinite;
+    animation: ticker 40s linear infinite;
   }
 
   .ticker-item {

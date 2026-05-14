@@ -99,8 +99,11 @@ window.refreshRentalsUI = () => {
 
         return `
             <div class="card product-card">
-                <div class="card-img-wrapper">
+                <div class="card-img-wrapper" style="position: relative; cursor: pointer;" onclick="document.getElementById('image-modal').classList.add('active'); document.getElementById('modal-img').src='${item.img}'; document.body.style.overflow='hidden';">
                     <img loading="lazy" src="${item.img}" alt="${item.title}">
+                    <div class="quick-view-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s; color: white; font-weight: bold; font-size: 1.1rem; border-radius: 12px 12px 0 0;">
+                        <i data-feather="zoom-in" style="margin-right: 8px;"></i> Quick View
+                    </div>
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">${item.title}</h3>
@@ -492,6 +495,15 @@ function renderHome() {
                 </div>
             </div>
         </section>
+
+        <section class="container mt-2" style="background: var(--surface-color); border-radius: 12px; padding: 3rem 2rem;">
+            <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">About Petals Paradise</h2>
+                <p class="section-subtitle" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Welcome to Petals Paradise Events! Based in Aldie, VA, we are a family-owned event decor and premium party rental company serving Loudoun County and the entire DMV area. Our passion is transforming your vision into reality, whether it's an elegant wedding, a joyful baby shower, or a milestone graduation. We pride ourselves on providing high-quality inventory, impeccable service, and a personal touch to make your celebrations truly unforgettable.
+                </p>
+            </div>
+        </section>
         
         <section class="container mt-2">
             <div class="text-center">
@@ -651,25 +663,61 @@ function renderGallery() {
         ]
     };
 
+    window.currentGalleryCategory = window.currentGalleryCategory || 'All';
+    window.filterGallery = (category) => {
+        window.currentGalleryCategory = category;
+        const container = document.getElementById('gallery-container');
+        if (container) {
+            container.outerHTML = renderGallery();
+            if (window.feather) feather.replace();
+            
+            // Re-bind image modal clicks for new content
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            document.querySelectorAll('#gallery-container img:not(.no-zoom)').forEach(img => {
+                img.onclick = function() {
+                    modal.classList.add('active');
+                    modalImg.src = this.src;
+                    document.body.style.overflow = 'hidden';
+                };
+            });
+        }
+    };
+
+    const categories = ['All', ...Object.keys(gallery)];
+    
+    let renderedContent = '';
+    Object.entries(gallery).forEach(([category, images]) => {
+        if (window.currentGalleryCategory !== 'All' && window.currentGalleryCategory !== category) return;
+        
+        renderedContent += `
+            <div class="mt-2 gallery-category-block">
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 1rem;">${category}</h3>
+                <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                    ${images.map(img => `
+                        <div class="card" style="padding: 0; overflow: hidden; border-radius: 12px; height: 350px;">
+                            <img loading="lazy" src="${img}" alt="${category}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; cursor: zoom-in;" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    });
+
     return `
-        <div class="container">
+        <div class="container" id="gallery-container">
             <div class="text-center">
                 <h2 class="section-title">Our Gallery</h2>
                 <p class="section-subtitle">A glimpse into the stunning events we've brought to life.</p>
             </div>
             
-            ${Object.entries(gallery).map(([category, images]) => `
-                <div class="mt-2">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 1rem;">${category}</h3>
-                    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
-                        ${images.map(img => `
-                            <div class="card" style="padding: 0; overflow: hidden; border-radius: 12px; height: 350px;">
-                                <img loading="lazy" src="${img}" alt="${category}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" onerror="this.onerror=null;this.src='https://via.placeholder.com/300?text=Image+Not+Found'" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)">
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `).join('')}
+            <div class="gallery-filters" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                ${categories.map(cat => `
+                    <button onclick="filterGallery('${cat}')" class="btn ${window.currentGalleryCategory === cat ? 'btn-primary' : 'btn-outline'}" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">${cat}</button>
+                `).join('')}
+            </div>
+
+            ${renderedContent}
         </div>
     `;
 }
