@@ -470,9 +470,9 @@ function renderFooter() {
             </div>
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="phone" style="width:16px; min-width:16px; margin-right:8px;"></i> <a href="tel:+18484486993" class="phone-link" style="color: inherit; text-decoration: none;">+1 848-448-6993</a></p>
-                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="mail" style="width:16px; min-width:16px; margin-right:8px;"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none; word-break: break-word;">contact@petalsparadiseevents.com</a></p>
-                <p style="display: flex; align-items: center; margin-bottom: 0.8rem;"><i data-feather="map-pin" style="width:16px; min-width:16px; margin-right:8px;"></i> Serving Ashburn, Aldie & DMV Area</p>
+                <p style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;"><i data-feather="phone" style="width: 20px; height: 20px; flex-shrink: 0; color: var(--primary-color);"></i> <a href="tel:+18484486993" class="phone-link" style="color: inherit; text-decoration: none; line-height: 1;">+1 848-448-6993</a></p>
+                <p style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;"><i data-feather="mail" style="width: 20px; height: 20px; flex-shrink: 0; color: var(--primary-color);"></i> <a href="mailto:contact@petalsparadiseevents.com" style="color: inherit; text-decoration: none; word-break: break-word; line-height: 1;">contact@petalsparadiseevents.com</a></p>
+                <p style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;"><i data-feather="map-pin" style="width: 20px; height: 20px; flex-shrink: 0; color: var(--primary-color);"></i> <span style="line-height: 1;">Serving Ashburn, Aldie & DMV Area</span></p>
             </div>
         </div>
         <div class="footer-bottom">
