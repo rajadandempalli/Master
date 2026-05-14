@@ -1550,19 +1550,26 @@ function router(preserveScroll = false) {
     }
 
     // Initialize date and time pickers with Flatpickr
-    if (typeof flatpickr !== 'undefined') {
-        flatpickr("input[type=date]", {
-            altInput: true,
-            altFormat: "F j, Y",
-            dateFormat: "Y-m-d",
-            minDate: "today"
-        });
-        flatpickr("input[type=time]", {
-            enableTime: true,
-            noCalendar: true,
-            dateFormat: "h:i K" // AM/PM format
-        });
-    }
+    // Use retry loop since flatpickr is loaded with `defer` and may not be ready yet
+    const initFlatpickr = (attempts = 0) => {
+        if (typeof flatpickr !== 'undefined') {
+            flatpickr("input[type=date]", {
+                altInput: true,
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+                minDate: "today"
+            });
+            flatpickr("input[type=time]", {
+                enableTime: true,
+                noCalendar: true,
+                dateFormat: "h:i K"
+            });
+        } else if (attempts < 20) {
+            setTimeout(() => initFlatpickr(attempts + 1), 150);
+        }
+    };
+    initFlatpickr();
+
 
     if (!preserveScroll) {
         window.scrollTo(0, 0); // Scroll to top on page change
